@@ -1,0 +1,284 @@
+{
+    "$__mpe_config_领取邀请赛": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1778953033782,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\领取邀请赛.json",
+            "savedViewport": {
+                "x": 0,
+                "y": 0,
+                "zoom": 1
+            },
+            "filename": "领取邀请赛",
+            "version": "v1.7.2"
+        }
+    },
+    "$__mpe_sticker_领取邀请赛": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2543,
+                "y": -749
+            },
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
+        }
+    },
+    "领取邀请赛开始": {
+        "next": [
+            "菜单-邀请赛"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2291,
+                "y": -748
+            }
+        }
+    },
+    "菜单-邀请赛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1000,
+                    0,
+                    280,
+                    325
+                ],
+                "template": [
+                    "邀请赛_菜单.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "界面-邀请赛"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2044,
+                "y": -748
+            }
+        }
+    },
+    "界面-邀请赛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "邀请赛_标题.png"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]邀请赛1",
+            "[JumpBack]邀请赛2",
+            "通用-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1795,
+                "y": -748
+            }
+        }
+    },
+    "全部领取0": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "全部领取0.png",
+                    "已完成今日所有日常任务.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -770,
+                "y": -396
+            }
+        }
+    },
+    "邀请函奖励1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "邀请函奖励0.png",
+                    "邀请函奖励1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "timeout": 3000,
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1018,
+                "y": -749
+            }
+        }
+    },
+    "邀请函奖励2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "邀请函奖励0.png",
+                    "邀请函奖励1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "timeout": 3000,
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1018,
+                "y": -454
+            }
+        }
+    },
+    "邀请函目标1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "邀请函目标0.png",
+                    "邀请函目标1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1272,
+                "y": -748
+            }
+        }
+    },
+    "邀请函目标2": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "邀请函目标0.png",
+                    "邀请函目标1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]全部领取1",
+            "全部领取0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1272,
+                "y": -454
+            }
+        }
+    },
+    "邀请赛1": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "邀请赛1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]邀请函目标1",
+            "邀请函奖励1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1523,
+                "y": -749
+            }
+        }
+    },
+    "邀请赛2": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "邀请赛2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]邀请函目标2",
+            "邀请函奖励2"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1524,
+                "y": -454
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+{
+    "$__mpe_config_领取任务": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1778953033782,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\领取任务.json",
+            "savedViewport": {
+                "x": 0,
+                "y": 0,
+                "zoom": 1
+            },
+            "filename": "领取任务",
+            "version": "v1.7.2"
+        }
+    },
+    "$__mpe_sticker_领取任务": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2543,
+                "y": -565
+            },
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
+        }
+    },
+    "领取任务开始": {
+        "next": [
+            "[JumpBack]任务快捷领取",
+            "菜单-任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2543,
+                "y": -364
+            }
+        }
+    },
+    "菜单-任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    500,
+                    1280,
+                    220
+                ],
+                "template": [
+                    "完成度.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "界面-任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2300,
+                "y": -363
+            }
+        }
+    },
+    "页签-日常": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "日常0.png",
+                    "日常1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]全部领取1",
+            "任务-全部领取0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1795,
+                "y": -334
+            }
+        }
+    },
+    "界面-任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "任务指南.png"
+                ]
+            }
+        },
+        "next": [
+            "页签-日常"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2044,
+                "y": -363
+            }
+        }
+    },
+    "任务-全部领取0": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "全部领取0.png",
+                    "已完成今日所有日常任务.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]已获得1",
+            "[JumpBack]已获得0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -770,
+                "y": -573
+            }
+        }
+    },
+    "任务快捷领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "任务快捷领取.png",
+                    "任务快捷领取1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "focus": {
+            "Node.Recognition.Failed": "任务快捷领取完成",
+            "Node.Recognition.Succeeded": "任务快捷领取"
+        },
+        "next": [
+            "[JumpBack]关闭弹窗",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2300,
+                "y": -626
+            }
+        }
+    },
+    "已获得0": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "已获得0.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "next": [
+            "通用-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -525,
+                "y": -576
+            }
+        }
+    },
+    "已获得1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "已获得1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "关闭弹窗带延迟"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -525,
+                "y": -751
+            }
+        }
+    },
+    "全部领取1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "全部领取1.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]关闭弹窗带延迟",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -770,
+                "y": -749
+            }
+        }
+    }
+}

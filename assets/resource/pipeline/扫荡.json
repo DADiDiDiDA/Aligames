@@ -1,0 +1,236 @@
+{
+    "$__mpe_config_扫荡": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1778953033782,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\扫荡.json",
+            "savedViewport": {
+                "x": 0,
+                "y": 0,
+                "zoom": 1
+            },
+            "filename": "扫荡",
+            "version": "v1.7.2"
+        }
+    },
+    "扫荡-焕发-自动战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "自动战斗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "扫荡-焕发-自动战斗弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2403,
+                "y": 28
+            }
+        }
+    },
+    "扫荡-焕发-自动战斗弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "设置自动战斗次数.png"
+                ]
+            }
+        },
+        "next": [
+            "扫荡-开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2646,
+                "y": 29
+            }
+        }
+    },
+    "扫荡-关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3643,
+                "y": -133
+            }
+        }
+    },
+    "扫荡-开始": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "扫荡-弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "扫荡-弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3142,
+                "y": -133
+            }
+        }
+    },
+    "扫荡-弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "扫荡.png",
+                    "正在扫荡.png",
+                    "扫荡结束.png"
+                ]
+            }
+        },
+        "next": [
+            "扫荡-结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3386,
+                "y": -133
+            }
+        }
+    },
+    "扫荡-结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "扫荡结束"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]扫荡-确认",
+            "[JumpBack]扫荡-关闭弹窗",
+            "扫荡-无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3142,
+                "y": 19
+            }
+        }
+    },
+    "扫荡-无关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "next": [
+            "界面-返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3643,
+                "y": 19
+            }
+        }
+    },
+    "扫荡-确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "确认.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3386,
+                "y": 19
+            }
+        }
+    },
+    "界面-返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "返回按钮.png",
+                    "返回按钮0.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3643,
+                "y": 235
+            }
+        }
+    },
+    "挑战券兑换": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "挑战券0-觉醒副本.png",
+                    "挑战券00-觉醒副本.png"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "挑战券没了"
+        },
+        "next": [
+            "界面-返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3386,
+                "y": 235
+            }
+        }
+    }
+}

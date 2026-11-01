@@ -1,0 +1,226 @@
+{
+    "$__mpe_config_返回主界面": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1778953033782,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\返回主界面.json",
+            "savedViewport": {
+                "x": 0,
+                "y": 0,
+                "zoom": 1
+            },
+            "filename": "返回主界面",
+            "version": "v1.7.2"
+        }
+    },
+    "通用-任务菜单": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    600,
+                    1280,
+                    120
+                ],
+                "template": [
+                    "完成度.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]通用-任务菜单-第二次",
+            "通用-任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 820,
+                "y": -2240
+            }
+        }
+    },
+    "通用-任务菜单-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    600,
+                    1280,
+                    120
+                ],
+                "template": [
+                    "完成度.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1065,
+                "y": -2432
+            }
+        }
+    },
+    "通用-任务界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "任务指南.png"
+                ]
+            }
+        },
+        "next": [
+            "通用-返回并结束任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1065,
+                "y": -2240
+            }
+        }
+    },
+    "通用-检查主页完毕": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    500,
+                    1280,
+                    220
+                ],
+                "template": [
+                    "游玩.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "StopTask"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1566,
+                "y": -2240
+            }
+        }
+    },
+    "通用-返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "返回按钮.png",
+                    "返回按钮0.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1566,
+                "y": -2014
+            }
+        }
+    },
+    "通用-返回并结束任务": {
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]通用-返回",
+            "通用-检查主页完毕"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1323,
+                "y": -2240
+            }
+        }
+    },
+    "关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1323,
+                "y": -2476
+            }
+        }
+    },
+    "关闭弹窗带延迟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": -285,
+                "y": -576
+            }
+        }
+    },
+    "无关闭弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "点击空白处关闭弹窗.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "$__mpe_code": {
+            "position": {
+                "x": 1566,
+                "y": -2476
+            }
+        }
+    }
+}

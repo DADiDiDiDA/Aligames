@@ -1,0 +1,195 @@
+{
+    "$__mpe_config_领取浮游城": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1778953033782,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\领取浮游城.json",
+            "savedViewport": {
+                "x": 0,
+                "y": 0,
+                "zoom": 1
+            },
+            "filename": "领取浮游城",
+            "version": "v1.7.2"
+        }
+    },
+    "$__mpe_sticker_领取浮游城": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2772,
+                "y": -92
+            },
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
+        }
+    },
+    "领取浮游城开始": {
+        "next": [
+            "在个人空间",
+            "在浮游城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2543,
+                "y": -92
+            }
+        }
+    },
+    "在个人空间": {
+        "enabled": false,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
+                "template": [
+                    "浮游城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "next": [
+            "在浮游城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2283,
+                "y": -92
+            }
+        }
+    },
+    "在浮游城": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
+                "template": [
+                    "个人空间.png"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]领取灵魂点数",
+            "[JumpBack]领取小公主礼物",
+            "返回个人空间",
+            "通用-检查主页完毕"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2023,
+                "y": -92
+            }
+        }
+    },
+    "返回个人空间": {
+        "enabled": false,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
+                "template": [
+                    "个人空间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "通用-检查主页完毕"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1507,
+                "y": -92
+            }
+        }
+    },
+    "领取小公主礼物": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    320,
+                    140,
+                    700,
+                    400
+                ],
+                "template": [
+                    "小公主的礼物.png",
+                    "小公主的礼物1.png",
+                    "小公主的礼物2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "关闭弹窗带延迟",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1763,
+                "y": 80
+            }
+        }
+    },
+    "领取灵魂点数": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    320,
+                    140,
+                    700,
+                    400
+                ],
+                "template": [
+                    "灵魂点数.png",
+                    "灵魂点数1.png",
+                    "灵魂点数2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "关闭弹窗带延迟",
+            "无关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1763,
+                "y": -92
+            }
+        }
+    }
+}

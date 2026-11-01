@@ -1,0 +1,462 @@
+{
+    "$__mpe_config_每日商店": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1778953033782,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\每日商店.json",
+            "savedViewport": {
+                "x": 0,
+                "y": 0,
+                "zoom": 1
+            },
+            "filename": "每日商店",
+            "version": "v1.7.2"
+        }
+    },
+    "$__mpe_sticker_每日商店": {
+        "$__mpe_code": {
+            "position": {
+                "x": -535,
+                "y": -1520
+            },
+            "content": "",
+            "color": "yellow",
+            "width": 200,
+            "height": 160
+        }
+    },
+    "每日商店开始": {
+        "next": [
+            "菜单-商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -281,
+                "y": -1520
+            }
+        }
+    },
+    "菜单-商店": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "商店T.png",
+                    "商店_菜单.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "界面-商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -31,
+                "y": -1520
+            }
+        }
+    },
+    "界面-商店": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "商店_标题.png"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]商店-订阅卡",
+            "[JumpBack]商店-资源",
+            "[JumpBack]商店-英雄成长",
+            "[JumpBack]商店-装备",
+            "界面-商店-返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 228,
+                "y": -1520
+            }
+        }
+    },
+    "界面-商店-返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "返回按钮.png",
+                    "返回按钮0.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "通用-检查主页完毕"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1000,
+                "y": -1728
+            }
+        }
+    },
+    "商店-英雄成长": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "英雄成长"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "timeout": 3000,
+        "next": [
+            "商店-英雄成长-传说中的觉醒石"
+        ],
+        "on_error": [
+            "界面-商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1004
+            }
+        }
+    },
+    "商店-英雄成长-传说中的觉醒石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "传说中的觉醒石.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "商店-英雄成长-加"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 758,
+                "y": -1031
+            }
+        }
+    },
+    "商店-英雄成长-加": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    640,
+                    0,
+                    640,
+                    720
+                ],
+                "template": [
+                    "加.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "repeat": 3,
+        "repeat_delay": 500,
+        "next": [
+            "商店-英雄成长-购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1000,
+                "y": -1031
+            }
+        }
+    },
+    "商店-英雄成长-购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "45000.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1247,
+                "y": -1031
+            }
+        }
+    },
+    "商店-装备": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "装备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "timeout": 3000,
+        "next": [
+            "商店-装备-强化锤"
+        ],
+        "on_error": [
+            "界面-商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1259
+            }
+        }
+    },
+    "商店-装备-强化锤": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "强化锤.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "商店-装备-购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 756,
+                "y": -1278
+            }
+        }
+    },
+    "商店-装备-购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "1000.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1000,
+                "y": -1278
+            }
+        }
+    },
+    "商店-订阅卡": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "订阅卡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "timeout": 3000,
+        "next": [
+            "商店-订阅卡-立即领取"
+        ],
+        "on_error": [
+            "界面-商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1728
+            }
+        }
+    },
+    "商店-订阅卡-立即领取": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "立即领取.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 756,
+                "y": -1728
+            }
+        }
+    },
+    "商店-资源": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    250,
+                    720
+                ],
+                "expected": [
+                    "资源"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "timeout": 3000,
+        "next": [
+            "商店-资源-金币"
+        ],
+        "on_error": [
+            "界面-商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 511,
+                "y": -1520
+            }
+        }
+    },
+    "商店-资源-购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "免费_弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "关闭弹窗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1000,
+                "y": -1520
+            }
+        }
+    },
+    "商店-资源-金币": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "免费_商店.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "商店-资源-购买"
+        ],
+        "on_error": [
+            "界面-商店"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 756,
+                "y": -1520
+            }
+        }
+    }
+}

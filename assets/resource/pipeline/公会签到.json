@@ -3,71 +3,39 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1778953033782,
+            "lastSyncTime": 1793540621293,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\公会签到.json",
             "savedViewport": {
-                "x": 0,
-                "y": 0,
-                "zoom": 1
+                "x": 282,
+                "y": 1195,
+                "zoom": 0.8
             },
             "filename": "公会签到",
-            "version": "v1.7.2"
+            "version": "v2.1.0"
         }
     },
-    "$__mpe_sticker_公会签到": {
+    "$__mpe_external_返回主界面开始_公会签到": {
         "$__mpe_code": {
             "position": {
-                "x": -770,
-                "y": -1965
-            },
-            "content": "",
-            "color": "yellow",
-            "width": 200,
-            "height": 160
+                "x": 887,
+                "y": -974
+            }
         }
     },
     "公会签到开始": {
         "next": [
-            "菜单-公会"
+            "开始进入公会界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -535,
-                "y": -1965
+                "x": -1372,
+                "y": -1313
             }
         }
     },
-    "菜单-公会": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "公会_菜单.png",
-                    "公会T.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "[JumpBack]界面-协力讨伐",
-            "界面-公会"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -285,
-                "y": -1965
-            }
-        }
-    },
-    "界面-公会": {
+    "已位于工会界面": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -83,123 +51,120 @@
             }
         },
         "next": [
-            "[JumpBack]公会签到1",
-            "公会签到0"
+            "开始公会签到"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -30,
-                "y": -1965
+                "x": -200,
+                "y": -1230
             }
         }
     },
-    "界面-公会-返回": {
+    "开始公会签到": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": [
-                    "返回按钮.png",
-                    "返回按钮0.png"
+                "roi": [
+                    94,
+                    618,
+                    81,
+                    52
+                ],
+                "expected": [
+                    "签到"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "post_delay": 2000,
         "next": [
-            "通用-任务菜单",
-            "通用-返回并结束任务"
+            "[JumpBack]开始公会签到_第二次",
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 724,
-                "y": -1930
+                "x": 371,
+                "y": -1178
             }
         }
     },
-    "公会签到0": {
+    "开始公会签到_第二次": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    94,
+                    618,
+                    81,
+                    52
+                ],
+                "expected": [
+                    "签到"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 757,
+                "y": -1375
+            }
+        }
+    },
+    "开始进入公会界面": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    10,
+                    596,
+                    435,
+                    115
+                ],
                 "template": [
-                    "签到0.png"
+                    "公会_菜单.png",
+                    "公会T.png"
                 ],
                 "threshold": [
                     0.9
                 ]
             }
         },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
         "next": [
-            "界面-公会-返回"
+            "已位于工会界面",
+            "[JumpBack]开始进入公会界面_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 481,
-                "y": -1930
+                "x": -832,
+                "y": -1302
             }
         }
     },
-    "界面-协力讨伐": {
-        "max_hit": 1,
+    "开始进入公会界面_第二次": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    0,
-                    0,
-                    500,
-                    200
+                    10,
+                    596,
+                    435,
+                    115
                 ],
                 "template": [
-                    "剩余挑战次数.png"
-                ]
-            }
-        },
-        "next": [
-            "界面-协力讨伐-确认",
-            "界面-协力讨伐-返回"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -30,
-                "y": -1773
-            }
-        }
-    },
-    "界面-协力讨伐-确认": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "确认.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 228,
-                "y": -1878
-            }
-        }
-    },
-    "界面-协力讨伐-返回": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    500,
-                    200
+                    "公会_菜单.png",
+                    "公会T.png"
                 ],
-                "template": [
-                    "返回按钮.png",
-                    "返回按钮0.png"
+                "threshold": [
+                    0.9
                 ]
             }
         },
@@ -209,54 +174,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 228,
-                "y": -1721
-            }
-        }
-    },
-    "公会签到1": {
-        "max_hit": 1,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "签到1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "[JumpBack]关闭弹窗",
-            "[JumpBack]确认",
-            "公会签到0"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 228,
-                "y": -2086
-            }
-        }
-    },
-    "确认": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "确认.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 481,
-                "y": -2086
+                "x": -533,
+                "y": -1513
             }
         }
     }

@@ -3,45 +3,28 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1778953033782,
+            "lastSyncTime": 1793540631826,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\领取浮游城.json",
             "savedViewport": {
-                "x": 0,
-                "y": 0,
-                "zoom": 1
+                "x": 1852,
+                "y": 207,
+                "zoom": 0.61
             },
             "filename": "领取浮游城",
-            "version": "v1.7.2"
+            "version": "v2.1.0"
         }
     },
-    "$__mpe_sticker_领取浮游城": {
+    "$__mpe_external_返回主界面开始_领取浮游城": {
         "$__mpe_code": {
             "position": {
-                "x": -2772,
-                "y": -92
-            },
-            "content": "",
-            "color": "yellow",
-            "width": 200,
-            "height": 160
-        }
-    },
-    "领取浮游城开始": {
-        "next": [
-            "在个人空间",
-            "在浮游城"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2543,
-                "y": -92
+                "x": -1437,
+                "y": 491
             }
         }
     },
-    "在个人空间": {
-        "enabled": false,
+    "前往浮游城": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -61,16 +44,43 @@
         },
         "post_delay": 5000,
         "next": [
-            "在浮游城"
+            "已位于浮游城",
+            "[JumpBack]前往浮游城_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2283,
-                "y": -92
+                "x": -2681,
+                "y": -170
             }
         }
     },
-    "在浮游城": {
+    "前往浮游城_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
+                "template": [
+                    "浮游城.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "$__mpe_code": {
+            "position": {
+                "x": -2304,
+                "y": -309
+            }
+        }
+    },
+    "已位于浮游城": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -88,43 +98,12 @@
         "next": [
             "[JumpBack]领取灵魂点数",
             "[JumpBack]领取小公主礼物",
-            "返回个人空间",
-            "通用-检查主页完毕"
+            "领取浮游城结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2023,
-                "y": -92
-            }
-        }
-    },
-    "返回个人空间": {
-        "enabled": false,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1100,
-                    0,
-                    180,
-                    720
-                ],
-                "template": [
-                    "个人空间.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "通用-检查主页完毕"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1507,
-                "y": -92
+                "x": -2275,
+                "y": 130
             }
         }
     },
@@ -149,14 +128,33 @@
             "type": "Click"
         },
         "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": -1677,
+                "y": 49
+            }
+        }
+    },
+    "领取浮游城开始": {
         "next": [
-            "关闭弹窗带延迟",
-            "无关闭弹窗"
+            "前往浮游城",
+            "已位于浮游城"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1763,
-                "y": 80
+                "x": -3197,
+                "y": 169
+            }
+        }
+    },
+    "领取浮游城结束": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1769,
+                "y": 455
             }
         }
     },
@@ -181,14 +179,10 @@
             "type": "Click"
         },
         "post_delay": 2000,
-        "next": [
-            "关闭弹窗带延迟",
-            "无关闭弹窗"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": -1763,
-                "y": -92
+                "x": -1664,
+                "y": -293
             }
         }
     }

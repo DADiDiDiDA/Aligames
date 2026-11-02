@@ -41,6 +41,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2288,
@@ -436,6 +437,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "需要自动战斗",
             "[JumpBack]开始点击最底端的三星通关关卡_第二次"

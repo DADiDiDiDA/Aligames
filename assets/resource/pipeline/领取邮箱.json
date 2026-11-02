@@ -50,6 +50,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]开始关闭邮件奖励弹窗_第二次",
             "全部领取邮件结束"
@@ -81,6 +82,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]执行一次全部接受",
             "[JumpBack]开始单个邮件奖励领取",
@@ -112,6 +114,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始单个邮件领取"
         ],
@@ -158,6 +161,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "确认全部接受邮件奖励",
             "[JumpBack]执行一次全部接受_第二次",
@@ -188,6 +192,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始关闭邮件奖励弹窗",
             "[JumpBack]确认全部接受邮件奖励_第二次"
@@ -217,6 +222,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "是否位于邮箱界面",
             "[JumpBack]进入邮箱界面_第二次"
@@ -293,6 +299,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1916,
@@ -320,6 +327,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 2765,
@@ -346,6 +354,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3084,
@@ -371,6 +380,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3604,
@@ -396,6 +406,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4019,

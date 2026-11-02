@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793591578428,
+            "lastSyncTime": 1793609977769,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\扫荡.json",
             "savedViewport": {
-                "x": -621,
-                "y": -129,
+                "x": -73,
+                "y": -125,
                 "zoom": 0.51
             },
             "filename": "扫荡",
@@ -128,6 +128,33 @@
             }
         }
     },
+    "开始战斗-进化石副本": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    834,
+                    81,
+                    141,
+                    58
+                ],
+                "expected": [
+                    "进化石副本"
+                ]
+            }
+        },
+        "next": [
+            "需要自动战斗",
+            "自动战斗条件不足",
+            "[JumpBack]开始点击最底端的三星通关关卡_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1850,
+                "y": 176
+            }
+        }
+    },
     "开始点击最底端的三星通关关卡": {
         "recognition": {
             "type": "TemplateMatch",
@@ -161,8 +188,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1851,
-                "y": 512
+                "x": 1847,
+                "y": 437
             }
         }
     },
@@ -346,15 +373,17 @@
         }
     },
     "扫荡开始": {
+        "post_delay": 2000,
         "next": [
+            "开始战斗-进化石副本",
             "开始点击最底端的三星通关关卡",
             "无可用扫荡次数",
             "扫荡结束返回主界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1023,
-                "y": 1239
+                "x": 990,
+                "y": 1185
             }
         }
     },

@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793590823765,
+            "lastSyncTime": 1793609939747,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": 1384,
-                "y": -1829,
-                "zoom": 0.44
+                "x": 453,
+                "y": -458,
+                "zoom": 0.25
             },
             "filename": "刷体力",
             "version": "v2.1.0"
@@ -40,8 +40,8 @@
             },
             "extra_positions": [
                 {
-                    "x": 2005,
-                    "y": 2639
+                    "x": 2298,
+                    "y": 2584
                 }
             ]
         }
@@ -532,8 +532,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1640,
-                "y": 2615
+                "x": 1945,
+                "y": 2560
             }
         }
     },
@@ -1482,8 +1482,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1183,
-                "y": 1719
+                "x": 1567,
+                "y": 1632
             }
         }
     },
@@ -1616,8 +1616,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1272,
-                "y": 2603
+                "x": 1537,
+                "y": 2496
             }
         }
     },
@@ -1821,6 +1821,62 @@
             }
         }
     },
+    "进入裂痕界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    78,
+                    1260,
+                    79
+                ],
+                "expected": [
+                    "裂痕"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "是否位于裂隙界面",
+            "[JumpBack]进入裂痕界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1837,
+                "y": 4728
+            }
+        }
+    },
+    "进入裂痕界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    78,
+                    1260,
+                    79
+                ],
+                "expected": [
+                    "裂痕"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": -1517,
+                "y": 4485
+            }
+        }
+    },
     "选择刷什么资源副本": {
         "next": [
             "副本-觉醒副本",
@@ -2013,62 +2069,6 @@
             "position": {
                 "x": -1486,
                 "y": 5175
-            }
-        }
-    },
-    "进入裂痕界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    2,
-                    78,
-                    1260,
-                    79
-                ],
-                "expected": [
-                    "裂痕"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "是否位于裂隙界面",
-            "[JumpBack]进入裂痕界面_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1837,
-                "y": 4728
-            }
-        }
-    },
-    "进入裂痕界面_第二次": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    2,
-                    78,
-                    1260,
-                    79
-                ],
-                "expected": [
-                    "裂痕"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": -1517,
-                "y": 4485
             }
         }
     },

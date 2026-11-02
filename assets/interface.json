@@ -15,7 +15,9 @@
     "resource": [
         {
             "name": "官服",
-            "path": ["./resource"]
+            "path": [
+                "./resource"
+            ]
         }
     ],
     "task": [
@@ -23,58 +25,73 @@
             "name": "🎮 启动游戏",
             "entry": "进入游戏开始",
             "default_check": true,
-            "option": ["启动方式"],
-            "doc": "启动游戏并回到游戏主界面。"
+            "option": [
+                "启动方式"
+            ],
+            "doc": "启动游戏并回到游戏主界面。",
+            "label": "🎮 启动游戏"
         },
         {
             "name": "🛒 每日商店",
             "entry": "每日商店开始",
             "default_check": true,
-            "doc": "进入商店购买每日免费/金币商品，并购买强化锤。"
+            "doc": "进入商店购买每日免费/金币商品，并购买强化锤。",
+            "label": "🛒 每日商店"
         },
         {
             "name": "🏛️ 公会签到",
             "entry": "公会签到开始",
             "default_check": true,
-            "doc": "进入公会完成每日签到。"
+            "doc": "进入公会完成每日签到。",
+            "label": "🏛️ 公会签到"
         },
         {
             "name": "⚔️ 刷体力 - 英雄传",
             "entry": "每日体力开始",
             "default_check": true,
-            "option": ["刷取目标-英雄传"],
-            "doc": "默认刷取英雄传，保留完整刷体力选项，可切换为裂隙。"
+            "option": [
+                "刷取目标-英雄传"
+            ],
+            "doc": "默认刷取英雄传，保留完整刷体力选项，可切换为裂隙。",
+            "label": "⚔️ 刷体力 - 英雄传"
         },
         {
             "name": "⚔️ 刷体力 - 裂隙",
             "entry": "每日体力开始",
             "default_check": true,
-            "option": ["刷取目标-裂隙"],
-            "doc": "默认刷取裂隙，保留完整刷体力选项，可切换为英雄传。"
+            "option": [
+                "刷取目标-裂隙"
+            ],
+            "doc": "默认刷取裂隙，保留完整刷体力选项，可切换为英雄传。",
+            "label": "⚔️ 刷体力 - 裂隙"
         },
         {
             "name": "🏝️ 领取浮游城",
             "entry": "领取浮游城开始",
             "default_check": true,
-            "doc": "进入浮游城领取灵魂点数和小公主礼物。"
+            "doc": "进入浮游城领取灵魂点数和小公主礼物。",
+            "label": "🏝️ 领取浮游城"
         },
         {
             "name": "🏟️ 圆形角斗场",
             "entry": "圆形角斗场开始-角斗场",
             "default_check": true,
-            "doc": "自动进入圆形角斗场并完成剩余次数战斗。"
+            "doc": "自动进入圆形角斗场并完成剩余次数战斗。",
+            "label": "🏟️ 圆形角斗场"
         },
         {
             "name": "📋 领取任务",
             "entry": "领取任务开始",
             "default_check": true,
-            "doc": "进入任务指南领取每日任务奖励。"
+            "doc": "进入任务指南领取每日任务奖励。",
+            "label": "📋 领取任务"
         },
         {
             "name": "📧 领取邮箱",
             "entry": "领取邮箱开始",
             "default_check": true,
-            "doc": "进入邮箱领取全部邮件奖励。"
+            "doc": "进入邮箱领取全部邮件奖励。",
+            "label": "📧 领取邮箱"
         }
     ],
     "option": {
@@ -88,15 +105,25 @@
                     "name": "刷取英雄传",
                     "label": "刷取英雄传",
                     "pipeline_override": {
-                        "选择刷取什么关卡": { "next": ["刷取英雄传"] }
+                        "选择刷取什么关卡": {
+                            "next": [
+                                "刷取英雄传"
+                            ]
+                        }
                     }
                 },
                 {
                     "name": "刷取裂隙",
                     "label": "刷取裂隙",
-                    "option": ["裂隙类型-英雄传"],
+                    "option": [
+                        "裂隙类型-英雄传"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么关卡": { "next": ["刷取裂隙副本"] }
+                        "选择刷取什么关卡": {
+                            "next": [
+                                "刷取裂隙副本"
+                            ]
+                        }
                     }
                 }
             ]
@@ -110,16 +137,26 @@
                 {
                     "name": "刷取裂隙",
                     "label": "刷取裂隙",
-                    "option": ["裂隙类型-裂隙"],
+                    "option": [
+                        "裂隙类型-裂隙"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么关卡": { "next": ["刷取裂隙副本"] }
+                        "选择刷取什么关卡": {
+                            "next": [
+                                "刷取裂隙副本"
+                            ]
+                        }
                     }
                 },
                 {
                     "name": "刷取英雄传",
                     "label": "刷取英雄传",
                     "pipeline_override": {
-                        "选择刷取什么关卡": { "next": ["刷取英雄传"] }
+                        "选择刷取什么关卡": {
+                            "next": [
+                                "刷取英雄传"
+                            ]
+                        }
                     }
                 }
             ]
@@ -133,25 +170,43 @@
                 {
                     "name": "刷取资源/觉醒关卡",
                     "label": "刷取资源/觉醒关卡",
-                    "option": ["资源/觉醒关卡-英雄传"],
+                    "option": [
+                        "资源/觉醒关卡-英雄传"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么裂隙关卡": { "next": ["刷取资源/觉醒关卡"] }
+                        "选择刷取什么裂隙关卡": {
+                            "next": [
+                                "刷取资源/觉醒关卡"
+                            ]
+                        }
                     }
                 },
                 {
                     "name": "刷取进化石关卡",
                     "label": "刷取进化石关卡",
-                    "option": ["进化石关卡-英雄传"],
+                    "option": [
+                        "进化石关卡-英雄传"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么裂隙关卡": { "next": ["刷取进化石关卡"] }
+                        "选择刷取什么裂隙关卡": {
+                            "next": [
+                                "刷取进化石关卡"
+                            ]
+                        }
                     }
                 },
                 {
                     "name": "刷取开花石关卡",
                     "label": "刷取开花石关卡",
-                    "option": ["开花石关卡-英雄传"],
+                    "option": [
+                        "开花石关卡-英雄传"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么裂隙关卡": { "next": ["刷取开花石关卡"] }
+                        "选择刷取什么裂隙关卡": {
+                            "next": [
+                                "刷取开花石关卡"
+                            ]
+                        }
                     }
                 }
             ]
@@ -165,25 +220,43 @@
                 {
                     "name": "刷取资源/觉醒关卡",
                     "label": "刷取资源/觉醒关卡",
-                    "option": ["资源/觉醒关卡-裂隙"],
+                    "option": [
+                        "资源/觉醒关卡-裂隙"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么裂隙关卡": { "next": ["刷取资源/觉醒关卡"] }
+                        "选择刷取什么裂隙关卡": {
+                            "next": [
+                                "刷取资源/觉醒关卡"
+                            ]
+                        }
                     }
                 },
                 {
                     "name": "刷取进化石关卡",
                     "label": "刷取进化石关卡",
-                    "option": ["进化石关卡-裂隙"],
+                    "option": [
+                        "进化石关卡-裂隙"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么裂隙关卡": { "next": ["刷取进化石关卡"] }
+                        "选择刷取什么裂隙关卡": {
+                            "next": [
+                                "刷取进化石关卡"
+                            ]
+                        }
                     }
                 },
                 {
                     "name": "刷取开花石关卡",
                     "label": "刷取开花石关卡",
-                    "option": ["开花石关卡-裂隙"],
+                    "option": [
+                        "开花石关卡-裂隙"
+                    ],
                     "pipeline_override": {
-                        "选择刷取什么裂隙关卡": { "next": ["刷取开花石关卡"] }
+                        "选择刷取什么裂隙关卡": {
+                            "next": [
+                                "刷取开花石关卡"
+                            ]
+                        }
                     }
                 }
             ]
@@ -194,12 +267,78 @@
             "description": "选择具体进化石副本。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
             "default_case": "虚进石",
             "cases": [
-                { "name": "虚进石", "label": "虚进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-虚进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "光进石", "label": "光进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-光进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "土进石", "label": "土进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-土进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "暗进石", "label": "暗进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-暗进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "水进石", "label": "水进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-水进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "火进石", "label": "火进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-火进石", "[JumpBack]页签-进化石副本_第二次"] } } }
+                {
+                    "name": "虚进石",
+                    "label": "虚进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-虚进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "光进石",
+                    "label": "光进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-光进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "土进石",
+                    "label": "土进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-土进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "暗进石",
+                    "label": "暗进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-暗进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "水进石",
+                    "label": "水进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-水进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "火进石",
+                    "label": "火进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-火进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                }
             ]
         },
         "进化石关卡-裂隙": {
@@ -208,12 +347,78 @@
             "description": "选择具体进化石副本。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
             "default_case": "虚进石",
             "cases": [
-                { "name": "虚进石", "label": "虚进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-虚进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "光进石", "label": "光进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-光进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "土进石", "label": "土进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-土进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "暗进石", "label": "暗进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-暗进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "水进石", "label": "水进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-水进石", "[JumpBack]页签-进化石副本_第二次"] } } },
-                { "name": "火进石", "label": "火进石", "pipeline_override": { "选择刷取什么进化石关卡": { "next": ["副本-火进石", "[JumpBack]页签-进化石副本_第二次"] } } }
+                {
+                    "name": "虚进石",
+                    "label": "虚进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-虚进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "光进石",
+                    "label": "光进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-光进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "土进石",
+                    "label": "土进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-土进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "暗进石",
+                    "label": "暗进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-暗进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "水进石",
+                    "label": "水进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-水进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "火进石",
+                    "label": "火进石",
+                    "pipeline_override": {
+                        "选择刷取什么进化石关卡": {
+                            "next": [
+                                "副本-火进石",
+                                "[JumpBack]页签-进化石副本_第二次"
+                            ]
+                        }
+                    }
+                }
             ]
         },
         "开花石关卡-英雄传": {
@@ -222,12 +427,78 @@
             "description": "选择具体开花石副本。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
             "default_case": "光花石",
             "cases": [
-                { "name": "光花石", "label": "光花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-光花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "土花石", "label": "土花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-土花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "暗花石", "label": "暗花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-暗花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "水花石", "label": "水花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-水花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "火花石", "label": "火花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-火花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "虚花石", "label": "虚花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-虚花石", "[JumpBack]页签-开花石副本_第二次"] } } }
+                {
+                    "name": "光花石",
+                    "label": "光花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-光花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "土花石",
+                    "label": "土花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-土花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "暗花石",
+                    "label": "暗花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-暗花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "水花石",
+                    "label": "水花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-水花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "火花石",
+                    "label": "火花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-火花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "虚花石",
+                    "label": "虚花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-虚花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                }
             ]
         },
         "开花石关卡-裂隙": {
@@ -236,12 +507,78 @@
             "description": "选择具体开花石副本。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
             "default_case": "光花石",
             "cases": [
-                { "name": "光花石", "label": "光花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-光花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "土花石", "label": "土花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-土花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "暗花石", "label": "暗花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-暗花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "水花石", "label": "水花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-水花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "火花石", "label": "火花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-火花石", "[JumpBack]页签-开花石副本_第二次"] } } },
-                { "name": "虚花石", "label": "虚花石", "pipeline_override": { "选择刷取什么开花石副本": { "next": ["副本-虚花石", "[JumpBack]页签-开花石副本_第二次"] } } }
+                {
+                    "name": "光花石",
+                    "label": "光花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-光花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "土花石",
+                    "label": "土花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-土花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "暗花石",
+                    "label": "暗花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-暗花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "水花石",
+                    "label": "水花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-水花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "火花石",
+                    "label": "火花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-火花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "虚花石",
+                    "label": "虚花石",
+                    "pipeline_override": {
+                        "选择刷取什么开花石副本": {
+                            "next": [
+                                "副本-虚花石",
+                                "[JumpBack]页签-开花石副本_第二次"
+                            ]
+                        }
+                    }
+                }
             ]
         },
         "资源/觉醒关卡-英雄传": {
@@ -250,11 +587,66 @@
             "description": "选择具体资源/觉醒副本。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
             "default_case": "觉醒",
             "cases": [
-                { "name": "觉醒", "label": "觉醒", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-觉醒副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "道具", "label": "道具", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-道具副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "金币", "label": "金币", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-金币副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "经验", "label": "经验", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-经验副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "红色碎片", "label": "红色碎片", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-红色碎片副本", "[JumpBack]页签-资源副本_第二次"] } } }
+                {
+                    "name": "觉醒",
+                    "label": "觉醒",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-觉醒副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "道具",
+                    "label": "道具",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-道具副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "金币",
+                    "label": "金币",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-金币副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "经验",
+                    "label": "经验",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-经验副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "红色碎片",
+                    "label": "红色碎片",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-红色碎片副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                }
             ]
         },
         "资源/觉醒关卡-裂隙": {
@@ -263,11 +655,66 @@
             "description": "选择具体资源/觉醒副本。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
             "default_case": "觉醒",
             "cases": [
-                { "name": "觉醒", "label": "觉醒", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-觉醒副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "道具", "label": "道具", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-道具副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "金币", "label": "金币", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-金币副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "经验", "label": "经验", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-经验副本", "[JumpBack]页签-资源副本_第二次"] } } },
-                { "name": "红色碎片", "label": "红色碎片", "pipeline_override": { "选择刷什么资源副本": { "next": ["副本-红色碎片副本", "[JumpBack]页签-资源副本_第二次"] } } }
+                {
+                    "name": "觉醒",
+                    "label": "觉醒",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-觉醒副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "道具",
+                    "label": "道具",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-道具副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "金币",
+                    "label": "金币",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-金币副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "经验",
+                    "label": "经验",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-经验副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "红色碎片",
+                    "label": "红色碎片",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-红色碎片副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                }
             ]
         },
         "启动方式": {
@@ -280,14 +727,22 @@
                     "name": "不需要启动游戏",
                     "label": "不需要启动游戏",
                     "pipeline_override": {
-                        "进入游戏开始": { "next": ["不需要启动游戏"] }
+                        "进入游戏开始": {
+                            "next": [
+                                "不需要启动游戏"
+                            ]
+                        }
                     }
                 },
                 {
                     "name": "需要启动游戏",
                     "label": "需要启动游戏",
                     "pipeline_override": {
-                        "进入游戏开始": { "next": ["需要启动游戏"] }
+                        "进入游戏开始": {
+                            "next": [
+                                "需要启动游戏"
+                            ]
+                        }
                     }
                 }
             ]

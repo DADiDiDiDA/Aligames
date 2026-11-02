@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793535744171,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\启动游戏.json",
             "savedViewport": {
-                "x": 1194,
-                "y": 1310,
-                "zoom": 0.46
+                "x": 2459,
+                "y": 2520,
+                "zoom": 0.88
             },
             "filename": "启动游戏",
             "version": "v2.1.0"
@@ -32,8 +28,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -464,
-                "y": -3879
+                "x": -840,
+                "y": -3566
             }
         }
     },
@@ -52,8 +48,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -921,
-                "y": -2974
+                "x": -883,
+                "y": -2692
             }
         }
     },
@@ -72,8 +68,8 @@
         "post_delay": 8000,
         "$__mpe_code": {
             "position": {
-                "x": -544,
-                "y": -2963
+                "x": -488,
+                "y": -2664
             }
         }
     },
@@ -105,8 +101,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -2260,
-                "y": -2977
+                "x": -2424,
+                "y": -3145
             }
         }
     },
@@ -127,8 +123,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -1880,
-                "y": -3017
+                "x": -2075,
+                "y": -3187
             }
         }
     },
@@ -138,18 +134,20 @@
             "param": {
                 "all_of": [
                     "主界面判断1",
-                    "主界面判断2"
+                    "主界面判断2",
+                    "主界面判断3"
                 ]
             }
         },
+        "post_delay": 5000,
         "next": [
             "主界面判断开始-第二次",
             "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -998,
-                "y": -1784
+                "x": -904,
+                "y": -3939
             }
         }
     },
@@ -159,7 +157,8 @@
             "param": {
                 "all_of": [
                     "主界面判断1",
-                    "主界面判断2"
+                    "主界面判断2",
+                    "主界面判断3"
                 ]
             }
         },
@@ -168,16 +167,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -682,
-                "y": -1791
-            }
-        }
-    },
-    "公告关闭结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": -471,
-                "y": -3384
+                "x": -334,
+                "y": -3918
             }
         }
     },
@@ -196,8 +187,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -948,
-                "y": -2143
+                "x": -885,
+                "y": -2053
             }
         }
     },
@@ -222,21 +213,34 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -531,
-                "y": -3265
+                "x": -478,
+                "y": -3016
             }
         }
     },
-    "关闭活动弹窗": {
-        "next": [
-            "[JumpBack]2周内不再提示",
-            "[JumpBack]签到",
-            "公告关闭结束"
-        ],
+    "前往个人空间": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1100,
+                    0,
+                    180,
+                    720
+                ],
+                "template": [
+                    "个人空间.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -941,
-                "y": -3487
+                "x": -872,
+                "y": -2380
             }
         }
     },
@@ -262,16 +266,16 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -1043,
-                "y": -1515
+                "x": -899,
+                "y": -1806
             }
         }
     },
     "已位于主界面任务结束": {
         "$__mpe_code": {
             "position": {
-                "x": -323,
-                "y": -1743
+                "x": 146,
+                "y": -3907
             }
         }
     },
@@ -289,8 +293,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -917,
-                "y": -3248
+                "x": -851,
+                "y": -2971
             }
         }
     },
@@ -315,8 +319,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -912,
-                "y": -2659
+                "x": -969,
+                "y": -1398
             }
         }
     },
@@ -342,22 +346,23 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -244,
-                "y": -3655
+                "x": -858,
+                "y": -3297
             }
         }
     },
     "返回主界面开始": {
         "timeout": -1,
         "next": [
-            "[JumpBack]关闭活动弹窗",
+            "主界面判断开始-第一次",
+            "[JumpBack]2周内不再提示",
+            "[JumpBack]签到",
             "[JumpBack]活动公告",
             "[JumpBack]下载资源",
-            "[JumpBack]确认进入游戏",
             "[JumpBack]前往个人空间",
             "[JumpBack]关闭弹窗",
-            "主界面判断开始-第一次",
-            "[JumpBack]左上角箭头返回"
+            "[JumpBack]左上角箭头返回",
+            "[JumpBack]确认进入游戏"
         ],
         "$__mpe_code": {
             "position": {
@@ -382,7 +387,7 @@
         "action": {
             "type": "StartApp",
             "param": {
-                "package": "com.bilibili.snake.aligames"
+                "package": "com.bilibili.snake"
             }
         },
         "post_delay": 2000,
@@ -396,29 +401,25 @@
             }
         }
     },
-    "前往个人空间": {
+    "主界面判断3": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1100,
-                    0,
-                    180,
-                    720
+                    1167,
+                    237,
+                    102,
+                    228
                 ],
                 "template": [
-                    "个人空间.png"
+                    "浮游城.png"
                 ]
             }
         },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -938,
-                "y": -2454
+                "x": -1726,
+                "y": -3192
             }
         }
     }

@@ -1,0 +1,533 @@
+{
+    "$__mpe_config_圆形角斗场": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793588582815,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\圆形角斗场.json",
+            "savedViewport": {
+                "x": -705,
+                "y": 16,
+                "zoom": 0.57
+            },
+            "filename": "圆形角斗场",
+            "version": "v2.1.0"
+        }
+    },
+    "$__mpe_external_返回主界面开始_圆形角斗场": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4963,
+                "y": 170
+            }
+        }
+    },
+    "判断是否位于圆形角斗场界面-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    12,
+                    5,
+                    180,
+                    65
+                ],
+                "expected": [
+                    "圆形角斗场"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]是否是段位更新界面",
+            "[JumpBack]确认竞技场战斗结果-角斗场",
+            "[JumpBack]点击空白处关闭弹窗-角斗场",
+            "剩余次数判断-角斗场",
+            "[JumpBack]开始圆形角斗场战斗-角斗场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4091,
+                "y": 270
+            }
+        }
+    },
+    "剩余次数判断-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    844,
+                    636,
+                    69,
+                    38
+                ],
+                "expected": [
+                    "0/5"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4630,
+                "y": 165
+            }
+        }
+    },
+    "圆形角斗场开始-角斗场": {
+        "next": [
+            "进入游玩界面-角斗场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2184,
+                "y": 292
+            }
+        }
+    },
+    "开始圆形角斗场战斗-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    960,
+                    503,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "开始战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "确认圆形角斗场战斗-角斗场",
+            "[JumpBack]开始圆形角斗场战斗-角斗场_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4595,
+                "y": 539
+            }
+        }
+    },
+    "开始圆形角斗场战斗-角斗场_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    960,
+                    503,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "开始战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4878,
+                "y": 386
+            }
+        }
+    },
+    "是否位于游玩指南界面-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    13,
+                    8,
+                    162,
+                    70
+                ],
+                "expected": [
+                    "游玩指南"
+                ]
+            }
+        },
+        "next": [
+            "进入PvP界面-角斗场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3010,
+                "y": 289
+            }
+        }
+    },
+    "点击空白处关闭弹窗-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    480,
+                    560,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "点击空白处"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4649,
+                "y": -108
+            }
+        }
+    },
+    "确认圆形角斗场战斗-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    645,
+                    560,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "开始战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]确认圆形角斗场战斗-角斗场_第二次",
+            "[JumpBack]竞技战斗内判断-角斗场",
+            "竞技场次数判断结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5125,
+                "y": 549
+            }
+        }
+    },
+    "确认圆形角斗场战斗-角斗场_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    645,
+                    560,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "开始战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5508,
+                "y": 326
+            }
+        }
+    },
+    "确认竞技场战斗结果-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    877,
+                    560,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4703,
+                "y": -418
+            }
+        }
+    },
+    "竞技战斗内判断-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    97,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "恢复能力",
+                    "每秒伤害",
+                    "生命"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5651,
+                "y": 558
+            }
+        }
+    },
+    "进入PvP界面-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    481,
+                    43,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "PvP"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入圆形角斗场界面-角斗场",
+            "[JumpBack]进入PvP界面-角斗场_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3418,
+                "y": 296
+            }
+        }
+    },
+    "进入PvP界面-角斗场_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    481,
+                    43,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "PvP"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3689,
+                "y": 567
+            }
+        }
+    },
+    "进入圆形角斗场界面-角斗场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    23,
+                    570,
+                    1226,
+                    71
+                ],
+                "expected": [
+                    "圆形角斗场"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于圆形角斗场界面-角斗场",
+            "[JumpBack]进入圆形角斗场界面-角斗场_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3765,
+                "y": 295
+            }
+        }
+    },
+    "进入圆形角斗场界面-角斗场_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    23,
+                    570,
+                    1226,
+                    71
+                ],
+                "expected": [
+                    "圆形角斗场"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4110,
+                "y": 602
+            }
+        }
+    },
+    "进入游玩界面-角斗场": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    900,
+                    557,
+                    377,
+                    154
+                ],
+                "template": [
+                    "游玩.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "是否位于游玩指南界面-角斗场",
+            "[JumpBack]进入游玩界面-角斗场_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2592,
+                "y": 257
+            }
+        }
+    },
+    "进入游玩界面-角斗场_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    900,
+                    557,
+                    377,
+                    154
+                ],
+                "template": [
+                    "游玩.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2946,
+                "y": -30
+            }
+        }
+    },
+    "竞技场次数判断结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5637,
+                "y": 915
+            }
+        }
+    },
+    "是否是段位更新界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    563,
+                    117,
+                    139,
+                    49
+                ],
+                "expected": [
+                    "段位更新"
+                ]
+            }
+        },
+        "next": [
+            "确认段位更新"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4715,
+                "y": -723
+            }
+        }
+    },
+    "确认段位更新": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    583,
+                    534,
+                    97,
+                    50
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5059,
+                "y": -717
+            }
+        }
+    }
+}

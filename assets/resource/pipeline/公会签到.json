@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793540621293,
+            "lastSyncTime": 1793585762318,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\公会签到.json",
             "savedViewport": {
-                "x": 282,
-                "y": 1195,
-                "zoom": 0.8
+                "x": 708,
+                "y": 674,
+                "zoom": 0.31
             },
             "filename": "公会签到",
             "version": "v2.1.0"
@@ -19,8 +19,8 @@
     "$__mpe_external_返回主界面开始_公会签到": {
         "$__mpe_code": {
             "position": {
-                "x": 887,
-                "y": -974
+                "x": 1006,
+                "y": -1181
             }
         }
     },
@@ -30,8 +30,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1372,
-                "y": -1313
+                "x": -1364,
+                "y": -1219
             }
         }
     },
@@ -85,8 +85,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 371,
-                "y": -1178
+                "x": 335,
+                "y": -1246
             }
         }
     },
@@ -112,8 +112,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 757,
-                "y": -1375
+                "x": 710,
+                "y": -1528
             }
         }
     },
@@ -176,8 +176,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -533,
-                "y": -1513
+                "x": -453,
+                "y": -1578
             }
         }
     }

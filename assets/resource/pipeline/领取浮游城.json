@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793540631826,
+            "lastSyncTime": 1793585748595,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\领取浮游城.json",
             "savedViewport": {
-                "x": 1852,
-                "y": 207,
-                "zoom": 0.61
+                "x": 1576,
+                "y": 234,
+                "zoom": 0.46
             },
             "filename": "领取浮游城",
             "version": "v2.1.0"
@@ -108,6 +108,7 @@
         }
     },
     "领取小公主礼物": {
+        "max_hit": 3,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -121,6 +122,9 @@
                     "小公主的礼物.png",
                     "小公主的礼物1.png",
                     "小公主的礼物2.png"
+                ],
+                "threshold": [
+                    0.5
                 ]
             }
         },

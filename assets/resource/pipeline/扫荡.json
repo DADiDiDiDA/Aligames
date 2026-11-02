@@ -3,75 +3,90 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793538704555,
+            "lastSyncTime": 1793591578428,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\扫荡.json",
             "savedViewport": {
-                "x": -215,
-                "y": -253,
-                "zoom": 0.53
+                "x": -621,
+                "y": -129,
+                "zoom": 0.51
             },
             "filename": "扫荡",
             "version": "v2.1.0"
         }
     },
-    "开始点击最底端的三星通关关卡_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1157,
-                    198,
-                    91,
-                    427
-                ],
-                "template": [
-                    "三星通关图标-未选择.png",
-                    "三星通关图标-已选择.png.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.5
-                ],
-                "order_by": "Vertical",
-                "index": -1
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
+    "$__mpe_external_返回主界面开始_扫荡": {
         "$__mpe_code": {
             "position": {
-                "x": 2288,
-                "y": 41
+                "x": 5544,
+                "y": 1201
             }
         }
     },
-    "需要自动战斗_第二次": {
+    "判断是否有自动战斗弹窗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    565,
+                    42,
+                    147,
+                    52
+                ],
+                "expected": [
+                    "自动战斗设置"
+                ]
+            }
+        },
+        "next": [
+            "增加自动战斗次数至上限"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2683,
+                "y": 628
+            }
+        }
+    },
+    "增加自动战斗次数至上限": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1093,
-                    622,
-                    144,
-                    65
+                    640,
+                    0,
+                    640,
+                    720
                 ],
                 "template": [
-                    "自动战斗.png"
+                    "加.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -24,
+                    11,
+                    -23,
+                    -21
+                ]
+            }
         },
         "post_delay": 2000,
+        "next": [
+            "[JumpBack]增加自动战斗次数至上限_第二次",
+            "扫荡-开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 2660,
-                "y": 255
+                "x": 3099,
+                "y": 578
             }
         }
     },
@@ -113,13 +128,64 @@
             }
         }
     },
-    "扫荡-开始_第二次": {
+    "开始点击最底端的三星通关关卡": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    1157,
+                    198,
+                    91,
+                    427
+                ],
                 "template": [
-                    "扫荡-弹窗.png"
-                ]
+                    "三星通关图标-未选择.png",
+                    "三星通关图标-已选择.png.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "需要自动战斗",
+            "自动战斗条件不足",
+            "[JumpBack]开始点击最底端的三星通关关卡_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1851,
+                "y": 512
+            }
+        }
+    },
+    "开始点击最底端的三星通关关卡_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1157,
+                    198,
+                    91,
+                    427
+                ],
+                "template": [
+                    "三星通关图标-未选择.png",
+                    "三星通关图标-已选择.png.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ],
+                "order_by": "Vertical",
+                "index": -1
             }
         },
         "action": {
@@ -128,8 +194,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 3824,
-                "y": 494
+                "x": 2288,
+                "y": 41
             }
         }
     },
@@ -177,6 +243,26 @@
             }
         }
     },
+    "扫荡-开始_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "扫荡-弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3824,
+                "y": 494
+            }
+        }
+    },
     "扫荡-弹窗": {
         "recognition": {
             "type": "TemplateMatch",
@@ -215,61 +301,6 @@
             "position": {
                 "x": 4791,
                 "y": 946
-            }
-        }
-    },
-    "需要自动战斗": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1093,
-                    622,
-                    144,
-                    65
-                ],
-                "template": [
-                    "自动战斗.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否有自动战斗弹窗",
-            "[JumpBack]需要自动战斗_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2319,
-                "y": 590
-            }
-        }
-    },
-    "判断是否有自动战斗弹窗": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    549,
-                    337,
-                    184,
-                    78
-                ],
-                "template": [
-                    "设置自动战斗次数.png"
-                ]
-            }
-        },
-        "next": [
-            "增加自动战斗次数至上限"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2683,
-                "y": 628
             }
         }
     },
@@ -327,6 +358,17 @@
             }
         }
     },
+    "扫荡结束返回主界面": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5140,
+                "y": 1416
+            }
+        }
+    },
     "无可用扫荡次数": {
         "recognition": {
             "type": "OCR",
@@ -352,86 +394,44 @@
             }
         }
     },
-    "扫荡结束返回主界面": {
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5140,
-                "y": 1416
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_扫荡": {
-        "$__mpe_code": {
-            "position": {
-                "x": 5544,
-                "y": 1201
-            }
-        }
-    },
-    "增加自动战斗次数至上限": {
+    "自动战斗条件不足": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    640,
-                    0,
-                    640,
-                    720
+                    1084,
+                    612,
+                    172,
+                    89
                 ],
                 "template": [
-                    "加.png"
-                ],
-                "threshold": [
-                    0.9
+                    "自动战斗（未满足）.png"
                 ]
             }
         },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    -24,
-                    11,
-                    -23,
-                    -21
-                ]
-            }
-        },
-        "post_delay": 2000,
         "next": [
-            "[JumpBack]增加自动战斗次数至上限_第二次",
-            "扫荡-开始"
+            "扫荡结束返回主界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3099,
-                "y": 578
+                "x": 2256,
+                "y": 873
             }
         }
     },
-    "开始点击最底端的三星通关关卡": {
+    "需要自动战斗": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1157,
-                    198,
-                    91,
-                    427
+                    1093,
+                    622,
+                    144,
+                    65
                 ],
                 "template": [
-                    "三星通关图标-未选择.png",
-                    "三星通关图标-已选择.png.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.5
-                ],
-                "order_by": "Vertical",
-                "index": -1
+                    "自动战斗.png"
+                ]
             }
         },
         "action": {
@@ -439,13 +439,39 @@
         },
         "post_delay": 2000,
         "next": [
-            "需要自动战斗",
-            "[JumpBack]开始点击最底端的三星通关关卡_第二次"
+            "判断是否有自动战斗弹窗",
+            "[JumpBack]需要自动战斗_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1851,
-                "y": 512
+                "x": 2325,
+                "y": 493
+            }
+        }
+    },
+    "需要自动战斗_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1093,
+                    622,
+                    144,
+                    65
+                ],
+                "template": [
+                    "自动战斗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2660,
+                "y": 255
             }
         }
     }

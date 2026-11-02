@@ -3,235 +3,58 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793538422889,
+            "lastSyncTime": 1793590823765,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": 584,
-                "y": -1696,
-                "zoom": 0.35
+                "x": 1384,
+                "y": -1829,
+                "zoom": 0.44
             },
             "filename": "刷体力",
             "version": "v2.1.0"
         }
     },
-    "进入游玩菜单_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    897,
-                    559,
-                    372,
-                    154
-                ],
-                "template": [
-                    "游玩.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": -2797,
-                "y": 4426
-            }
-        }
-    },
-    "页签-推荐_第二次": {
-        "max_hit": 15,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "推荐0.png",
-                    "推荐1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": -1486,
-                "y": 5175
-            }
-        }
-    },
-    "菜单-英雄传_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    46,
-                    130,
-                    1197,
-                    560
-                ],
-                "template": [
-                    "忒提斯英雄传_裂隙.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": -1197,
-                "y": 5975
-            }
-        }
-    },
-    "页签-裂痕_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "裂痕0.png",
-                    "裂痕1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": -1517,
-                "y": 4485
-            }
-        }
-    },
-    "是否位于裂隙界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    51,
-                    144,
-                    1180,
-                    50
-                ],
-                "expected": [
-                    "副本"
-                ]
-            }
-        },
-        "next": [
-            "选择刷取什么裂隙关卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1517,
-                "y": 4850
-            }
-        }
-    },
-    "页签-进化石副本_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
+    "$__mpe_external_扫荡-开始_刷体力": {
         "$__mpe_code": {
             "position": {
                 "x": 83,
-                "y": -896
+                "y": 8200
             }
         }
     },
-    "页签-开花石副本_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
+    "$__mpe_external_扫荡开始_刷体力": {
         "$__mpe_code": {
             "position": {
-                "x": 88,
-                "y": 6324
+                "x": 2021,
+                "y": 8421
             }
         }
     },
-    "页签-资源副本_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "资源副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
+    "$__mpe_external_返回主界面开始_刷体力": {
         "$__mpe_code": {
             "position": {
-                "x": 403,
-                "y": 7403
+                "x": -557,
+                "y": 6054
+            },
+            "extra_positions": [
+                {
+                    "x": 2005,
+                    "y": 2639
+                }
+            ]
+        }
+    },
+    "准备开始扫荡": {
+        "post_delay": 2000,
+        "next": [
+            "扫荡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1496,
+                "y": 7961
             }
         }
     },
@@ -254,1100 +77,6 @@
             "position": {
                 "x": -3677,
                 "y": -896
-            }
-        }
-    },
-    "$__mpe_external_返回主界面开始_刷体力": {
-        "$__mpe_code": {
-            "position": {
-                "x": -557,
-                "y": 6054
-            },
-            "extra_positions": [
-                {
-                    "x": 2005,
-                    "y": 2639
-                }
-            ]
-        }
-    },
-    "刷体力任务结束": {
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1640,
-                "y": 2615
-            }
-        }
-    },
-    "刷取开花石关卡": {
-        "next": [
-            "页签-开花石副本"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -877,
-                "y": 4882
-            }
-        }
-    },
-    "刷取英雄传": {
-        "next": [
-            "页签-推荐"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2157,
-                "y": 5283
-            }
-        }
-    },
-    "刷取裂隙副本": {
-        "next": [
-            "页签-裂痕"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2157,
-                "y": 4825
-            }
-        }
-    },
-    "刷取资源/觉醒关卡": {
-        "next": [
-            "页签-资源副本"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -877,
-                "y": 5250
-            }
-        }
-    },
-    "刷取进化石关卡": {
-        "next": [
-            "页签-进化石副本"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -877,
-                "y": 4450
-            }
-        }
-    },
-    "副本-光花石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "光属性开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-光花石",
-            "[JumpBack]副本-光花石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 4308
-            }
-        }
-    },
-    "副本-光进石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "光属性进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-光进石",
-            "[JumpBack]副本-光进石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 2020
-            }
-        }
-    },
-    "副本-土花石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "土属性开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-土花石",
-            "[JumpBack]副本-土花石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 4757
-            }
-        }
-    },
-    "副本-土进石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "土属性进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-土进石",
-            "[JumpBack]副本-土进石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 893
-            }
-        }
-    },
-    "副本-暗花石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "暗属性开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-暗花石",
-            "[JumpBack]副本-暗花石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 6733
-            }
-        }
-    },
-    "副本-暗进石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "暗属性进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-暗进石",
-            "[JumpBack]副本-暗进石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": -485
-            }
-        }
-    },
-    "副本-水花石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "水属性开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-水花石",
-            "[JumpBack]副本-水花石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 5902
-            }
-        }
-    },
-    "副本-水进石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "水属性进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-水进石",
-            "[JumpBack]副本-水进石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 2709
-            }
-        }
-    },
-    "副本-火花石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "火属性开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-火花石",
-            "[JumpBack]副本-火花石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 5395
-            }
-        }
-    },
-    "副本-火进石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "火属性进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-火进石",
-            "[JumpBack]副本-火进石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 204
-            }
-        }
-    },
-    "副本-红色碎片副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "红色碎片副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-红色碎片副本",
-            "[JumpBack]副本-红色碎片副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 403,
-                "y": 8220
-            }
-        }
-    },
-    "副本-经验副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "经验副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-经验副本",
-            "[JumpBack]副本-经验副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 403,
-                "y": 9119
-            }
-        }
-    },
-    "副本-虚花石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "虚属性开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-虚花石",
-            "[JumpBack]副本-虚花石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 3639
-            }
-        }
-    },
-    "副本-虚进石": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "虚属性进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-虚进石",
-            "[JumpBack]副本-虚进石_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 1562
-            }
-        }
-    },
-    "副本-觉醒副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "觉醒副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-觉醒副本",
-            "[JumpBack]副本-觉醒副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 398,
-                "y": 9713
-            }
-        }
-    },
-    "副本-道具副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "道具副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-道具副本",
-            "[JumpBack]副本-道具副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 403,
-                "y": 7800
-            }
-        }
-    },
-    "副本-金币副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "金币副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "判断是否位于裂隙界面-金币副本",
-            "[JumpBack]副本-金币副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 403,
-                "y": 8640
-            }
-        }
-    },
-    "已位于游玩指南": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    500,
-                    200
-                ],
-                "template": [
-                    "游玩指南.png"
-                ]
-            }
-        },
-        "next": [
-            "选择刷取什么关卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2797,
-                "y": 4791
-            }
-        }
-    },
-    "扫荡-焕发-石头没满": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "满.png"
-                ]
-            }
-        },
-        "inverse": true,
-        "next": [
-            "扫荡开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1183,
-                "y": 1719
-            }
-        }
-    },
-    "扫荡-焕发-资源可刷": {
-        "next": [
-            "扫荡开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1568,
-                "y": 8272
-            }
-        }
-    },
-    "扫荡-石头没满": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "满.png"
-                ]
-            }
-        },
-        "inverse": true,
-        "next": [
-            "准备开始扫荡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1335,
-                "y": 3744
-            }
-        }
-    },
-    "准备开始扫荡": {
-        "post_delay": 2000,
-        "next": [
-            "扫荡开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1496,
-                "y": 7961
-            }
-        }
-    },
-    "每日体力开始": {
-        "next": [
-            "进入游玩菜单"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -3437,
-                "y": 4553
-            }
-        }
-    },
-    "界面-英雄传": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "忒提斯英雄传_标题.png"
-                ]
-            }
-        },
-        "next": [
-            "英雄传-无券",
-            "英雄传-有券"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1197,
-                "y": 5665
-            }
-        }
-    },
-    "石头满了": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "满.png"
-                ]
-            }
-        },
-        "focus": {
-            "Node.Recognition.Succeeded": "⚠️石头满了"
-        },
-        "next": [
-            "刷体力任务结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1272,
-                "y": 2603
-            }
-        }
-    },
-    "英雄传-扫荡": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "扫荡-英雄传.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "扫荡界面弹出来了吗-英雄传",
-            "[JumpBack]英雄传-扫荡_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -557,
-                "y": 5588
-            }
-        }
-    },
-    "英雄传-无券": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "挑战券0-英雄传.png"
-                ],
-                "threshold": [
-                    0.98
-                ]
-            }
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -877,
-                "y": 5953
-            }
-        }
-    },
-    "英雄传-有券": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "挑战券1-英雄传.png"
-                ],
-                "threshold": [
-                    0.98
-                ]
-            }
-        },
-        "next": [
-            "英雄传-扫荡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -877,
-                "y": 5611
-            }
-        }
-    },
-    "菜单-英雄传": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    46,
-                    130,
-                    1197,
-                    560
-                ],
-                "template": [
-                    "忒提斯英雄传_裂隙.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "界面-英雄传",
-            "[JumpBack]菜单-英雄传_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1517,
-                "y": 5667
-            }
-        }
-    },
-    "进入游玩菜单": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    897,
-                    559,
-                    372,
-                    154
-                ],
-                "template": [
-                    "游玩.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "已位于游玩指南",
-            "[JumpBack]进入游玩菜单_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -3117,
-                "y": 4456
-            }
-        }
-    },
-    "选择刷什么资源副本": {
-        "next": [
-            "副本-觉醒副本",
-            "副本-道具副本",
-            "副本-金币副本",
-            "副本-经验副本",
-            "副本-红色碎片副本",
-            "[JumpBack]页签-资源副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 7910
-            }
-        }
-    },
-    "选择刷取什么关卡": {
-        "next": [
-            "刷取英雄传",
-            "刷取裂隙副本"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2477,
-                "y": 4849
-            }
-        }
-    },
-    "选择刷取什么开花石副本": {
-        "next": [
-            "副本-光花石",
-            "副本-土花石",
-            "副本-暗花石",
-            "副本-水花石",
-            "副本-火花石",
-            "副本-虚花石",
-            "[JumpBack]页签-开花石副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -237,
-                "y": 4843
-            }
-        }
-    },
-    "选择刷取什么裂隙关卡": {
-        "next": [
-            "刷取进化石关卡",
-            "刷取开花石关卡",
-            "刷取资源/觉醒关卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1197,
-                "y": 4872
-            }
-        }
-    },
-    "选择刷取什么进化石关卡": {
-        "next": [
-            "副本-虚进石",
-            "副本-光进石",
-            "副本-土进石",
-            "副本-暗进石",
-            "副本-水进石",
-            "副本-火进石",
-            "[JumpBack]页签-进化石副本_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -237,
-                "y": 2022
-            }
-        }
-    },
-    "页签-开花石副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "开花石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "选择刷取什么开花石副本"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -557,
-                "y": 4779
-            }
-        }
-    },
-    "页签-推荐": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "推荐0.png",
-                    "推荐1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "菜单-英雄传",
-            "[JumpBack]页签-推荐_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1837,
-                "y": 5186
-            }
-        }
-    },
-    "页签-裂痕": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "裂痕0.png",
-                    "裂痕1.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "是否位于裂隙界面",
-            "[JumpBack]页签-裂痕_第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1837,
-                "y": 4728
-            }
-        }
-    },
-    "页签-资源副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "资源副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "选择刷什么资源副本"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -237,
-                "y": 5147
-            }
-        }
-    },
-    "页签-进化石副本": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    0,
-                    0,
-                    1280,
-                    200
-                ],
-                "template": [
-                    "进化石副本.png"
-                ],
-                "threshold": [
-                    0.9
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "选择刷取什么进化石关卡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -557,
-                "y": 4347
-            }
-        }
-    },
-    "$__mpe_external_扫荡-开始_刷体力": {
-        "$__mpe_code": {
-            "position": {
-                "x": 83,
-                "y": 8200
-            }
-        }
-    },
-    "扫荡界面弹出来了吗-英雄传": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    570,
-                    41,
-                    155,
-                    47
-                ],
-                "expected": [
-                    "自动战斗设置"
-                ]
-            }
-        },
-        "next": [
-            "扫荡-开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -237,
-                "y": 5579
-            }
-        }
-    },
-    "英雄传-扫荡_第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "扫荡-英雄传.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": -237,
-                "y": 5883
             }
         }
     },
@@ -1616,6 +345,57 @@
             }
         }
     },
+    "判断是否位于裂隙界面-红色碎片副本": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    4,
+                    188,
+                    71
+                ],
+                "expected": [
+                    "裂痕"
+                ]
+            }
+        },
+        "next": [
+            "准备开始扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 793,
+                "y": 8096
+            }
+        }
+    },
+    "判断是否位于裂隙界面-经验副本": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    4,
+                    188,
+                    71
+                ],
+                "expected": [
+                    "裂痕"
+                ]
+            }
+        },
+        "next": [
+            "扫荡-焕发-资源可刷",
+            "准备开始扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 793,
+                "y": 9454
+            }
+        }
+    },
     "判断是否位于裂隙界面-虚花石": {
         "recognition": {
             "type": "OCR",
@@ -1669,7 +449,7 @@
             }
         }
     },
-    "判断是否位于裂隙界面-红色碎片副本": {
+    "判断是否位于裂隙界面-觉醒副本": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1685,38 +465,12 @@
             }
         },
         "next": [
-            "准备开始扫荡"
+            "扫荡开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 793,
-                "y": 8096
-            }
-        }
-    },
-    "判断是否位于裂隙界面-经验副本": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    4,
-                    4,
-                    188,
-                    71
-                ],
-                "expected": [
-                    "裂痕"
-                ]
-            }
-        },
-        "next": [
-            "扫荡-焕发-资源可刷",
-            "准备开始扫荡"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 793,
-                "y": 9454
+                "x": 1143,
+                "y": 9734
             }
         }
     },
@@ -1772,28 +526,96 @@
             }
         }
     },
-    "判断是否位于裂隙界面-觉醒副本": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    4,
-                    4,
-                    188,
-                    71
-                ],
-                "expected": [
-                    "裂痕"
-                ]
-            }
-        },
+    "刷体力任务结束": {
         "next": [
-            "扫荡开始"
+            "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1143,
-                "y": 9734
+                "x": 1640,
+                "y": 2615
+            }
+        }
+    },
+    "刷取开花石关卡": {
+        "next": [
+            "页签-开花石副本"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -877,
+                "y": 4882
+            }
+        }
+    },
+    "刷取英雄传": {
+        "next": [
+            "页签-推荐"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2157,
+                "y": 5283
+            }
+        }
+    },
+    "刷取裂隙副本": {
+        "next": [
+            "进入裂痕界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2157,
+                "y": 4825
+            }
+        }
+    },
+    "刷取资源/觉醒关卡": {
+        "next": [
+            "页签-资源副本"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -877,
+                "y": 5250
+            }
+        }
+    },
+    "刷取进化石关卡": {
+        "next": [
+            "页签-进化石副本"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -877,
+                "y": 4450
+            }
+        }
+    },
+    "副本-光花石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "光属性开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-光花石",
+            "[JumpBack]副本-光花石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 4308
             }
         }
     },
@@ -1820,6 +642,33 @@
             }
         }
     },
+    "副本-光进石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "光属性进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-光进石",
+            "[JumpBack]副本-光进石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 2020
+            }
+        }
+    },
     "副本-光进石_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1840,6 +689,33 @@
             "position": {
                 "x": 403,
                 "y": 2335
+            }
+        }
+    },
+    "副本-土花石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "土属性开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-土花石",
+            "[JumpBack]副本-土花石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 4757
             }
         }
     },
@@ -1866,6 +742,33 @@
             }
         }
     },
+    "副本-土进石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "土属性进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-土进石",
+            "[JumpBack]副本-土进石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 893
+            }
+        }
+    },
     "副本-土进石_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1886,6 +789,33 @@
             "position": {
                 "x": 403,
                 "y": 633
+            }
+        }
+    },
+    "副本-暗花石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "暗属性开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-暗花石",
+            "[JumpBack]副本-暗花石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 6733
             }
         }
     },
@@ -1912,6 +842,33 @@
             }
         }
     },
+    "副本-暗进石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "暗属性进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-暗进石",
+            "[JumpBack]副本-暗进石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": -485
+            }
+        }
+    },
     "副本-暗进石_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1932,6 +889,33 @@
             "position": {
                 "x": 403,
                 "y": -745
+            }
+        }
+    },
+    "副本-水花石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "水属性开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-水花石",
+            "[JumpBack]副本-水花石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 5902
             }
         }
     },
@@ -1958,6 +942,33 @@
             }
         }
     },
+    "副本-水进石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "水属性进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-水进石",
+            "[JumpBack]副本-水进石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 2709
+            }
+        }
+    },
     "副本-水进石_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -1978,6 +989,33 @@
             "position": {
                 "x": 403,
                 "y": 3024
+            }
+        }
+    },
+    "副本-火花石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "火属性开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-火花石",
+            "[JumpBack]副本-火花石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 5395
             }
         }
     },
@@ -2004,6 +1042,33 @@
             }
         }
     },
+    "副本-火进石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "火属性进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-火进石",
+            "[JumpBack]副本-火进石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 204
+            }
+        }
+    },
     "副本-火进石_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -2024,6 +1089,33 @@
             "position": {
                 "x": 403,
                 "y": -56
+            }
+        }
+    },
+    "副本-红色碎片副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "红色碎片副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-红色碎片副本",
+            "[JumpBack]副本-红色碎片副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 403,
+                "y": 8220
             }
         }
     },
@@ -2050,6 +1142,33 @@
             }
         }
     },
+    "副本-经验副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "经验副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-经验副本",
+            "[JumpBack]副本-经验副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 403,
+                "y": 9119
+            }
+        }
+    },
     "副本-经验副本_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -2070,6 +1189,33 @@
             "position": {
                 "x": 793,
                 "y": 9089
+            }
+        }
+    },
+    "副本-虚花石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "虚属性开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-虚花石",
+            "[JumpBack]副本-虚花石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 3639
             }
         }
     },
@@ -2096,6 +1242,33 @@
             }
         }
     },
+    "副本-虚进石": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "虚属性进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-虚进石",
+            "[JumpBack]副本-虚进石_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 1562
+            }
+        }
+    },
     "副本-虚进石_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -2116,6 +1289,33 @@
             "position": {
                 "x": 403,
                 "y": 1646
+            }
+        }
+    },
+    "副本-觉醒副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "觉醒副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-觉醒副本",
+            "[JumpBack]副本-觉醒副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 398,
+                "y": 9713
             }
         }
     },
@@ -2142,6 +1342,33 @@
             }
         }
     },
+    "副本-道具副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "道具副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-道具副本",
+            "[JumpBack]副本-道具副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 403,
+                "y": 7800
+            }
+        }
+    },
     "副本-道具副本_第二次": {
         "recognition": {
             "type": "TemplateMatch",
@@ -2162,6 +1389,33 @@
             "position": {
                 "x": 793,
                 "y": 7028
+            }
+        }
+    },
+    "副本-金币副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "金币副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否位于裂隙界面-金币副本",
+            "[JumpBack]副本-金币副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 403,
+                "y": 8640
             }
         }
     },
@@ -2188,11 +1442,755 @@
             }
         }
     },
-    "$__mpe_external_扫荡开始_刷体力": {
+    "已位于游玩指南": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    500,
+                    200
+                ],
+                "template": [
+                    "游玩指南.png"
+                ]
+            }
+        },
+        "next": [
+            "选择刷取什么关卡"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 2021,
-                "y": 8421
+                "x": -2797,
+                "y": 4791
+            }
+        }
+    },
+    "扫荡-焕发-石头没满": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "满.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "next": [
+            "扫荡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1183,
+                "y": 1719
+            }
+        }
+    },
+    "扫荡-焕发-资源可刷": {
+        "next": [
+            "扫荡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1568,
+                "y": 8272
+            }
+        }
+    },
+    "扫荡-石头没满": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "满.png"
+                ]
+            }
+        },
+        "inverse": true,
+        "next": [
+            "准备开始扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1335,
+                "y": 3744
+            }
+        }
+    },
+    "扫荡界面弹出来了吗-英雄传": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    570,
+                    41,
+                    155,
+                    47
+                ],
+                "expected": [
+                    "自动战斗设置"
+                ]
+            }
+        },
+        "next": [
+            "扫荡-开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -237,
+                "y": 5579
+            }
+        }
+    },
+    "是否位于裂隙界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    51,
+                    144,
+                    1180,
+                    50
+                ],
+                "expected": [
+                    "副本"
+                ]
+            }
+        },
+        "next": [
+            "选择刷取什么裂隙关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1517,
+                "y": 4850
+            }
+        }
+    },
+    "每日体力开始": {
+        "next": [
+            "进入游玩菜单"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3437,
+                "y": 4553
+            }
+        }
+    },
+    "界面-英雄传": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "忒提斯英雄传_标题.png"
+                ]
+            }
+        },
+        "next": [
+            "英雄传-无券",
+            "英雄传-有券"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1197,
+                "y": 5665
+            }
+        }
+    },
+    "石头满了": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "满.png"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "⚠️石头满了"
+        },
+        "next": [
+            "刷体力任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1272,
+                "y": 2603
+            }
+        }
+    },
+    "英雄传-扫荡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "扫荡-英雄传.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "扫荡界面弹出来了吗-英雄传",
+            "[JumpBack]英雄传-扫荡_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -557,
+                "y": 5588
+            }
+        }
+    },
+    "英雄传-扫荡_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "扫荡-英雄传.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": -237,
+                "y": 5883
+            }
+        }
+    },
+    "英雄传-无券": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "挑战券0-英雄传.png"
+                ],
+                "threshold": [
+                    0.98
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -877,
+                "y": 5953
+            }
+        }
+    },
+    "英雄传-有券": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "挑战券1-英雄传.png"
+                ],
+                "threshold": [
+                    0.98
+                ]
+            }
+        },
+        "next": [
+            "英雄传-扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -877,
+                "y": 5611
+            }
+        }
+    },
+    "菜单-英雄传": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    46,
+                    130,
+                    1197,
+                    560
+                ],
+                "template": [
+                    "忒提斯英雄传_裂隙.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "界面-英雄传",
+            "[JumpBack]菜单-英雄传_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1517,
+                "y": 5667
+            }
+        }
+    },
+    "菜单-英雄传_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    46,
+                    130,
+                    1197,
+                    560
+                ],
+                "template": [
+                    "忒提斯英雄传_裂隙.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": -1197,
+                "y": 5975
+            }
+        }
+    },
+    "进入游玩菜单": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    897,
+                    559,
+                    372,
+                    154
+                ],
+                "template": [
+                    "游玩.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "已位于游玩指南",
+            "[JumpBack]进入游玩菜单_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3117,
+                "y": 4456
+            }
+        }
+    },
+    "进入游玩菜单_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    897,
+                    559,
+                    372,
+                    154
+                ],
+                "template": [
+                    "游玩.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": -2797,
+                "y": 4426
+            }
+        }
+    },
+    "选择刷什么资源副本": {
+        "next": [
+            "副本-觉醒副本",
+            "副本-道具副本",
+            "副本-金币副本",
+            "副本-经验副本",
+            "副本-红色碎片副本",
+            "[JumpBack]页签-资源副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": 7910
+            }
+        }
+    },
+    "选择刷取什么关卡": {
+        "next": [
+            "刷取英雄传",
+            "刷取裂隙副本"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2477,
+                "y": 4849
+            }
+        }
+    },
+    "选择刷取什么开花石副本": {
+        "next": [
+            "副本-光花石",
+            "副本-土花石",
+            "副本-暗花石",
+            "副本-水花石",
+            "副本-火花石",
+            "副本-虚花石",
+            "[JumpBack]页签-开花石副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -237,
+                "y": 4843
+            }
+        }
+    },
+    "选择刷取什么裂隙关卡": {
+        "next": [
+            "刷取进化石关卡",
+            "刷取开花石关卡",
+            "刷取资源/觉醒关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1197,
+                "y": 4872
+            }
+        }
+    },
+    "选择刷取什么进化石关卡": {
+        "next": [
+            "副本-虚进石",
+            "副本-光进石",
+            "副本-土进石",
+            "副本-暗进石",
+            "副本-水进石",
+            "副本-火进石",
+            "[JumpBack]页签-进化石副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -237,
+                "y": 2022
+            }
+        }
+    },
+    "页签-开花石副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择刷取什么开花石副本"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -557,
+                "y": 4779
+            }
+        }
+    },
+    "页签-开花石副本_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "开花石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 88,
+                "y": 6324
+            }
+        }
+    },
+    "页签-推荐": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "推荐0.png",
+                    "推荐1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "菜单-英雄传",
+            "[JumpBack]页签-推荐_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1837,
+                "y": 5186
+            }
+        }
+    },
+    "页签-推荐_第二次": {
+        "max_hit": 15,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "推荐0.png",
+                    "推荐1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": -1486,
+                "y": 5175
+            }
+        }
+    },
+    "进入裂痕界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    78,
+                    1260,
+                    79
+                ],
+                "expected": [
+                    "裂痕"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "是否位于裂隙界面",
+            "[JumpBack]进入裂痕界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1837,
+                "y": 4728
+            }
+        }
+    },
+    "进入裂痕界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    78,
+                    1260,
+                    79
+                ],
+                "expected": [
+                    "裂痕"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": -1517,
+                "y": 4485
+            }
+        }
+    },
+    "页签-资源副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "资源副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择刷什么资源副本"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -237,
+                "y": 5147
+            }
+        }
+    },
+    "页签-资源副本_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "资源副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 403,
+                "y": 7403
+            }
+        }
+    },
+    "页签-进化石副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "选择刷取什么进化石关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -557,
+                "y": 4347
+            }
+        }
+    },
+    "页签-进化石副本_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    1280,
+                    200
+                ],
+                "template": [
+                    "进化石副本.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 83,
+                "y": -896
             }
         }
     }

@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -33,
-                "y": -2225,
-                "zoom": 0.38
+                "x": -849,
+                "y": -2997,
+                "zoom": 0.51
             },
             "filename": "领取邮箱",
             "version": "v2.1.0"
@@ -186,7 +186,7 @@
                     50
                 ],
                 "expected": [
-                    "领取"
+                    "接收"
                 ]
             }
         },

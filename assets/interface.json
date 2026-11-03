@@ -721,7 +721,7 @@
             "type": "select",
             "label": "启动方式",
             "description": "选择启动游戏任务是否需要由脚本启动游戏。",
-            "default_case": "不需要启动游戏",
+            "default_case": "需要启动游戏",
             "cases": [
                 {
                     "name": "不需要启动游戏",

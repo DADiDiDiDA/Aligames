@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793754753550,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\圆形角斗场.json",
             "savedViewport": {
-                "x": -6238,
-                "y": -415,
-                "zoom": 1.4
+                "x": -1373,
+                "y": 69,
+                "zoom": 0.4
             },
             "filename": "圆形角斗场",
             "version": "v2.1.0"
@@ -15,8 +19,8 @@
     "$__mpe_external_返回主界面开始_圆形角斗场": {
         "$__mpe_code": {
             "position": {
-                "x": 4963,
-                "y": 170
+                "x": 5300,
+                "y": 138
             }
         }
     },
@@ -71,8 +75,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4630,
-                "y": 165
+                "x": 4737,
+                "y": 0
             }
         }
     },
@@ -114,8 +118,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4595,
-                "y": 539
+                "x": 4543,
+                "y": 678
             }
         }
     },
@@ -140,8 +144,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 4878,
-                "y": 386
+                "x": 4865,
+                "y": 473
             }
         }
     },
@@ -170,6 +174,31 @@
             }
         }
     },
+    "是否是段位更新界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    563,
+                    117,
+                    139,
+                    49
+                ],
+                "expected": [
+                    "段位更新"
+                ]
+            }
+        },
+        "next": [
+            "确认段位更新"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4743,
+                "y": -823
+            }
+        }
+    },
     "点击空白处关闭弹窗-角斗场": {
         "recognition": {
             "type": "OCR",
@@ -191,8 +220,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 4649,
-                "y": -108
+                "x": 4751,
+                "y": -308
             }
         }
     },
@@ -218,12 +247,12 @@
         "next": [
             "[JumpBack]确认圆形角斗场战斗-角斗场_第二次",
             "[JumpBack]竞技战斗内判断-角斗场",
-            "竞技场次数判断结束"
+            "竞技场战斗结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5125,
-                "y": 549
+                "x": 5169,
+                "y": 736
             }
         }
     },
@@ -248,8 +277,34 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5508,
-                "y": 326
+                "x": 5599,
+                "y": 336
+            }
+        }
+    },
+    "确认段位更新": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    583,
+                    534,
+                    97,
+                    50
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 5129,
+                "y": -839
             }
         }
     },
@@ -274,8 +329,35 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 4703,
-                "y": -418
+                "x": 4740,
+                "y": -581
+            }
+        }
+    },
+    "竞技场战斗结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    55,
+                    52,
+                    272,
+                    165
+                ],
+                "expected": [
+                    "本场结果"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]是否是段位更新界面_第二次",
+            "[JumpBack]确认竞技场战斗结果-角斗场_第二次",
+            "竞技场判断结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5746,
+                "y": 869
             }
         }
     },
@@ -298,8 +380,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5651,
-                "y": 558
+                "x": 5688,
+                "y": 625
             }
         }
     },
@@ -410,8 +492,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 4110,
-                "y": 602
+                "x": 4107,
+                "y": 669
             }
         }
     },
@@ -471,15 +553,44 @@
             }
         }
     },
-    "竞技场次数判断结束": {
+    "都挑战失败了-角斗场": {
+        "next": [
+            "返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 5637,
-                "y": 915
+                "x": 4719,
+                "y": 242
             }
         }
     },
-    "是否是段位更新界面": {
+    "确认竞技场战斗结果-角斗场_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    877,
+                    560,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6227,
+                "y": 760
+            }
+        }
+    },
+    "是否是段位更新界面_第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -495,16 +606,16 @@
             }
         },
         "next": [
-            "确认段位更新"
+            "确认段位更新_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4715,
-                "y": -723
+                "x": 6180,
+                "y": 456
             }
         }
     },
-    "确认段位更新": {
+    "确认段位更新_第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -525,19 +636,30 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 5059,
-                "y": -717
+                "x": 6567,
+                "y": 467
             }
         }
     },
-    "都挑战失败了-角斗场": {
-        "next": [
-            "返回主界面开始"
-        ],
+    "竞技场判断结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    65,
+                    13,
+                    134,
+                    49
+                ],
+                "expected": [
+                    "圆形角斗场"
+                ]
+            }
+        },
         "$__mpe_code": {
             "position": {
-                "x": 4484,
-                "y": 381
+                "x": 6136,
+                "y": 1159
             }
         }
     }

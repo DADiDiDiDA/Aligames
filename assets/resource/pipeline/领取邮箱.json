@@ -3,10 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1793844534214,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\领取邮箱.json",
             "savedViewport": {
-                "x": -849,
-                "y": -2997,
-                "zoom": 0.51
+                "x": -359,
+                "y": -2323,
+                "zoom": 0.4
             },
             "filename": "领取邮箱",
             "version": "v2.1.0"

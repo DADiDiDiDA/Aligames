@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793609977769,
+            "lastSyncTime": 1793843767359,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\扫荡.json",
             "savedViewport": {
-                "x": -73,
-                "y": -125,
-                "zoom": 0.51
+                "x": -1717,
+                "y": 327,
+                "zoom": 0.61
             },
             "filename": "扫荡",
             "version": "v2.1.0"
@@ -501,6 +501,246 @@
             "position": {
                 "x": 2660,
                 "y": 255
+            }
+        }
+    },
+    "觉醒副本扫荡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    842,
+                    84,
+                    107,
+                    52
+                ],
+                "expected": [
+                    "觉醒副本"
+                ]
+            }
+        },
+        "next": [
+            "开始点击最底端的三星通关关卡_觉醒副本"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1839,
+                "y": -494
+            }
+        }
+    },
+    "开始点击最底端的三星通关关卡_觉醒副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1157,
+                    198,
+                    91,
+                    427
+                ],
+                "template": [
+                    "三星通关图标-未选择.png",
+                    "三星通关图标-已选择.png.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "需要自动战斗_觉醒副本",
+            "觉醒副本无剩余挑战次数",
+            "[JumpBack]开始点击最底端的三星通关关卡_觉醒副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2236,
+                "y": -581
+            }
+        }
+    },
+    "判断是否进入挑战界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    528,
+                    62,
+                    212,
+                    63
+                ],
+                "expected": [
+                    "自动战斗设置"
+                ]
+            }
+        },
+        "next": [
+            "判断是否有剩余免费次数",
+            "无剩余挑战次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3087,
+                "y": -362
+            }
+        }
+    },
+    "判断是否有剩余免费次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    510,
+                    269,
+                    264,
+                    116
+                ],
+                "expected": [
+                    "剩余免费进入次数"
+                ]
+            }
+        },
+        "next": [
+            "扫荡-开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3468,
+                "y": -92
+            }
+        }
+    },
+    "无剩余挑战次数": {
+        "next": [
+            "判断是否有剩余免费次数",
+            "扫荡结束返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3581,
+                "y": -274
+            }
+        }
+    },
+    "开始点击最底端的三星通关关卡_觉醒副本_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1157,
+                    198,
+                    91,
+                    427
+                ],
+                "template": [
+                    "三星通关图标-未选择.png",
+                    "三星通关图标-已选择.png.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ],
+                "order_by": "Vertical",
+                "index": -1
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2749,
+                "y": -982
+            }
+        }
+    },
+    "需要自动战斗_觉醒副本": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1093,
+                    622,
+                    144,
+                    65
+                ],
+                "template": [
+                    "自动战斗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "判断是否进入挑战界面",
+            "[JumpBack]需要自动战斗_觉醒副本_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2691,
+                "y": -492
+            }
+        }
+    },
+    "需要自动战斗_觉醒副本_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1093,
+                    622,
+                    144,
+                    65
+                ],
+                "template": [
+                    "自动战斗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3051,
+                "y": -699
+            }
+        }
+    },
+    "觉醒副本无剩余挑战次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    991,
+                    620,
+                    118,
+                    57
+                ],
+                "expected": [
+                    "挑战券兑换"
+                ]
+            }
+        },
+        "next": [
+            "无剩余挑战次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2641,
+                "y": -89
             }
         }
     }

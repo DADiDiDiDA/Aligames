@@ -32,6 +32,20 @@
             "label": "🎮 启动游戏"
         },
         {
+            "name": "📧 领取邮箱",
+            "entry": "领取邮箱开始",
+            "default_check": true,
+            "doc": "进入邮箱领取全部邮件奖励。",
+            "label": "📧 领取邮箱"
+        },
+        {
+            "name": "🤝 好友赠送",
+            "entry": "好友赠送开始",
+            "default_check": true,
+            "doc": "进入好友界面，一键赠送好友礼物并领取。",
+            "label": "🤝 好友赠送"
+        },
+        {
             "name": "🛒 每日商店",
             "entry": "每日商店开始",
             "default_check": true,
@@ -56,13 +70,23 @@
             "label": "⚔️ 刷体力 - 英雄传"
         },
         {
+            "name": "⚔️ 刷体力 - 觉醒副本",
+            "entry": "每日体力开始",
+            "default_check": true,
+            "option": [
+                "刷取目标-觉醒副本"
+            ],
+            "doc": "默认刷取资源/觉醒关卡中的觉醒副本。",
+            "label": "⚔️ 刷体力 - 觉醒副本"
+        },
+        {
             "name": "⚔️ 刷体力 - 裂隙",
             "entry": "每日体力开始",
             "default_check": true,
             "option": [
                 "刷取目标-裂隙"
             ],
-            "doc": "默认刷取裂隙，保留完整刷体力选项，可切换为英雄传。",
+            "doc": "默认刷取裂隙中的暗属性进化石关卡，可切换为其他裂隙或英雄传。",
             "label": "⚔️ 刷体力 - 裂隙"
         },
         {
@@ -85,13 +109,6 @@
             "default_check": true,
             "doc": "进入任务指南领取每日任务奖励。",
             "label": "📋 领取任务"
-        },
-        {
-            "name": "📧 领取邮箱",
-            "entry": "领取邮箱开始",
-            "default_check": true,
-            "doc": "进入邮箱领取全部邮件奖励。",
-            "label": "📧 领取邮箱"
         }
     ],
     "option": {
@@ -131,7 +148,7 @@
         "刷取目标-裂隙": {
             "type": "select",
             "label": "刷取目标",
-            "description": "选择刷取英雄传或裂隙。当前任务默认裂隙。",
+            "description": "选择刷取英雄传或裂隙。当前任务默认裂隙-暗属性进化石。",
             "default_case": "刷取裂隙",
             "cases": [
                 {
@@ -155,6 +172,33 @@
                         "选择刷取什么关卡": {
                             "next": [
                                 "刷取英雄传"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "刷取目标-觉醒副本": {
+            "type": "select",
+            "label": "刷取目标",
+            "description": "专门刷取资源/觉醒关卡中的觉醒副本。",
+            "default_case": "刷取觉醒副本",
+            "cases": [
+                {
+                    "name": "刷取觉醒副本",
+                    "label": "刷取觉醒副本",
+                    "option": [
+                        "资源/觉醒关卡-觉醒副本"
+                    ],
+                    "pipeline_override": {
+                        "选择刷取什么关卡": {
+                            "next": [
+                                "刷取裂隙副本"
+                            ]
+                        },
+                        "选择刷取什么裂隙关卡": {
+                            "next": [
+                                "刷取资源/觉醒关卡"
                             ]
                         }
                     }
@@ -214,8 +258,8 @@
         "裂隙类型-裂隙": {
             "type": "select",
             "label": "裂隙类型",
-            "description": "选择裂隙副本类型。当前任务默认资源/觉醒。",
-            "default_case": "刷取资源/觉醒关卡",
+            "description": "选择裂隙副本类型。当前任务默认进化石关卡。",
+            "default_case": "刷取进化石关卡",
             "cases": [
                 {
                     "name": "刷取资源/觉醒关卡",
@@ -344,8 +388,8 @@
         "进化石关卡-裂隙": {
             "type": "select",
             "label": "进化石关卡",
-            "description": "选择具体进化石副本。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
-            "default_case": "虚进石",
+            "description": "选择具体进化石副本。当前任务默认暗进石。覆盖副本选择节点的 next，保留页签 JumpBack 节点。",
+            "default_case": "暗进石",
             "cases": [
                 {
                     "name": "虚进石",
@@ -717,6 +761,74 @@
                 }
             ]
         },
+        "资源/觉醒关卡-觉醒副本": {
+            "type": "select",
+            "label": "资源/觉醒关卡",
+            "description": "选择具体资源/觉醒副本。当前任务默认觉醒。",
+            "default_case": "觉醒",
+            "cases": [
+                {
+                    "name": "觉醒",
+                    "label": "觉醒",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-觉醒副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "道具",
+                    "label": "道具",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-道具副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "金币",
+                    "label": "金币",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-金币副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "经验",
+                    "label": "经验",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-经验副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "红色碎片",
+                    "label": "红色碎片",
+                    "pipeline_override": {
+                        "选择刷什么资源副本": {
+                            "next": [
+                                "副本-红色碎片副本",
+                                "[JumpBack]页签-资源副本_第二次"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
         "启动方式": {
             "type": "select",
             "label": "启动方式",
@@ -724,23 +836,23 @@
             "default_case": "需要启动游戏",
             "cases": [
                 {
-                    "name": "不需要启动游戏",
-                    "label": "不需要启动游戏",
-                    "pipeline_override": {
-                        "进入游戏开始": {
-                            "next": [
-                                "不需要启动游戏"
-                            ]
-                        }
-                    }
-                },
-                {
                     "name": "需要启动游戏",
                     "label": "需要启动游戏",
                     "pipeline_override": {
                         "进入游戏开始": {
                             "next": [
                                 "需要启动游戏"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "不需要启动游戏",
+                    "label": "不需要启动游戏",
+                    "pipeline_override": {
+                        "进入游戏开始": {
+                            "next": [
+                                "不需要启动游戏"
                             ]
                         }
                     }

@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793609939747,
+            "lastSyncTime": 1793843763892,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": 453,
-                "y": -458,
-                "zoom": 0.25
+                "x": -301,
+                "y": -6569,
+                "zoom": 0.7
             },
             "filename": "刷体力",
             "version": "v2.1.0"
@@ -19,8 +19,8 @@
     "$__mpe_external_扫荡-开始_刷体力": {
         "$__mpe_code": {
             "position": {
-                "x": 83,
-                "y": 8200
+                "x": -51,
+                "y": 8272
             }
         }
     },
@@ -465,7 +465,7 @@
             }
         },
         "next": [
-            "扫荡开始"
+            "觉醒副本扫荡"
         ],
         "$__mpe_code": {
             "position": {
@@ -1888,8 +1888,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 83,
-                "y": 7910
+                "x": -28,
+                "y": 7904
             }
         }
     },
@@ -2099,8 +2099,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -237,
-                "y": 5147
+                "x": -251,
+                "y": 5180
             }
         }
     },
@@ -2191,6 +2191,14 @@
             "position": {
                 "x": 83,
                 "y": -896
+            }
+        }
+    },
+    "$__mpe_external_觉醒副本扫荡_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1587,
+                "y": 9763
             }
         }
     }

@@ -1,6 +1,6 @@
 {
     "interface_version": 2,
-    "name": "aligames",
+    "name": "Aligames",
     "version": "0.0.4",
     "license": "MIT",
     "welcome": "欢迎使用坎公骑冠剑自动化脚本！首次使用请先阅读各任务说明，并确认游戏账号已处于可自动登录状态。",
@@ -102,6 +102,13 @@
             "default_check": true,
             "doc": "自动进入圆形角斗场并完成剩余次数战斗。",
             "label": "🏟️ 圆形角斗场"
+        },
+        {
+            "name": "🔨 装备强化一次",
+            "entry": "装备强化一次开始",
+            "default_check": true,
+            "doc": "进入任务界面，完成每日任务“强化1次装备”，并返回主界面。",
+            "label": "🔨 装备强化一次"
         },
         {
             "name": "📋 领取任务",

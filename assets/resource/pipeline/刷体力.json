@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1793843763892,
+            "lastSyncTime": 1793941708596,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "D:\\Automate\\Git-Maawork\\aligames\\assets\\resource\\pipeline\\刷体力.json",
+            "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -301,
-                "y": -6569,
-                "zoom": 0.7
+                "x": 1565,
+                "y": -3854,
+                "zoom": 0.74
             },
             "filename": "刷体力",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
         }
     },
     "$__mpe_external_扫荡-开始_刷体力": {
@@ -29,6 +29,14 @@
             "position": {
                 "x": 2021,
                 "y": 8421
+            }
+        }
+    },
+    "$__mpe_external_觉醒副本扫荡_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1587,
+                "y": 9763
             }
         }
     },
@@ -1730,7 +1738,8 @@
         "post_delay": 2000,
         "next": [
             "界面-英雄传",
-            "[JumpBack]菜单-英雄传_第二次"
+            "[JumpBack]菜单-英雄传_第二次",
+            "[JumpBack]骑士传有弹窗"
         ],
         "$__mpe_code": {
             "position": {
@@ -2194,11 +2203,26 @@
             }
         }
     },
-    "$__mpe_external_觉醒副本扫荡_刷体力": {
+    "骑士传有弹窗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    426,
+                    533,
+                    471,
+                    182
+                ],
+                "expected": [
+                    "确认",
+                    "空白"
+                ]
+            }
+        },
         "$__mpe_code": {
             "position": {
-                "x": 1587,
-                "y": 9763
+                "x": -1196,
+                "y": 5402
             }
         }
     }

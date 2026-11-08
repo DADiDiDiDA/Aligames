@@ -3,17 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794105267350,
+            "lastSyncTime": 1794107700146,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\启动游戏.json",
             "savedViewport": {
-                "x": 1399,
-                "y": 1062,
-                "zoom": 0.56
+                "x": 1043,
+                "y": 908,
+                "zoom": 0.23
             },
             "filename": "启动游戏",
             "version": "v2.1.1"
+        }
+    },
+    "$__mpe_anchor_启动游戏一次_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": -966,
+                "y": -1095
+            }
         }
     },
     "2周内不再提示": {
@@ -427,14 +435,6 @@
             "position": {
                 "x": -2276,
                 "y": -2595
-            }
-        }
-    },
-    "$__mpe_anchor_启动游戏一次_启动游戏": {
-        "$__mpe_code": {
-            "position": {
-                "x": -966,
-                "y": -1095
             }
         }
     }

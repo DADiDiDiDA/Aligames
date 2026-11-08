@@ -1,0 +1,969 @@
+{
+    "$__mpe_config_活动奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794115188034,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\活动奖励.json",
+            "savedViewport": {
+                "x": -2664,
+                "y": -1187,
+                "zoom": 0.49
+            },
+            "filename": "活动奖励",
+            "version": "v2.1.1"
+        }
+    },
+    "$__mpe_external_返回主界面开始_活动奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7085,
+                "y": 1835
+            },
+            "extra_positions": [
+                {
+                    "x": 7004,
+                    "y": 2827
+                },
+                {
+                    "x": 6881,
+                    "y": 3940
+                },
+                {
+                    "x": 6897,
+                    "y": 3496
+                }
+            ]
+        }
+    },
+    "一键领取扭蛋机任务奖励-扭蛋机": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1018,
+                    627,
+                    109,
+                    60
+                ],
+                "expected": [
+                    "一键领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8865,
+                "y": 1774
+            }
+        }
+    },
+    "关闭活动1：邀请赛奖励": {
+        "next": [
+            "活动1：邀请赛奖励结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5785,
+                "y": 1966
+            }
+        }
+    },
+    "关闭活动2：扭蛋机": {
+        "next": [
+            "活动2-扭蛋机结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5637,
+                "y": 2715
+            }
+        }
+    },
+    "关闭活动3": {
+        "next": [
+            "活动3结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5794,
+                "y": 3702
+            }
+        }
+    },
+    "判断是否有待领取奖励-扭蛋机": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1200,
+                    630,
+                    57,
+                    65
+                ],
+                "template": [
+                    "感叹号-大.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.6
+                ]
+            }
+        },
+        "next": [
+            "前往扭蛋机任务界面-扭蛋机"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7555,
+                "y": 2092
+            }
+        }
+    },
+    "判断有没有待处理邀请赛-邀请赛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    237,
+                    119,
+                    82,
+                    389
+                ],
+                "template": [
+                    "邀请赛红色图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -83,
+                    37,
+                    -19,
+                    -17
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]判断有没有待处理邀请赛-邀请赛_第二次",
+            "[JumpBack]选择待领取任务-邀请赛",
+            "无待领取的邀请赛"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6865,
+                "y": 1140
+            }
+        }
+    },
+    "判断有没有待处理邀请赛-邀请赛_第二次": {
+        "max_hit": 5,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    237,
+                    119,
+                    82,
+                    389
+                ],
+                "template": [
+                    "邀请赛红色图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -83,
+                    37,
+                    -19,
+                    -17
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7308,
+                "y": 783
+            }
+        }
+    },
+    "前往扭蛋机任务界面-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1149,
+                    662,
+                    87,
+                    54
+                ],
+                "expected": [
+                    "活动目标"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    30,
+                    -47,
+                    -61,
+                    -16
+                ]
+            }
+        },
+        "next": [
+            "是否位于扭蛋机任务界面-扭蛋机"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7935,
+                "y": 2149
+            }
+        }
+    },
+    "寻找巨型扭蛋机活动-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    80,
+                    92,
+                    266,
+                    619
+                ],
+                "expected": [
+                    "扭蛋机"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "是否位于扭蛋机界面-扭蛋机",
+            "[JumpBack]寻找巨型扭蛋机活动-扭蛋机_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6827,
+                "y": 2236
+            }
+        }
+    },
+    "寻找巨型扭蛋机活动-扭蛋机_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    80,
+                    92,
+                    266,
+                    619
+                ],
+                "expected": [
+                    "扭蛋机"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7114,
+                "y": 1960
+            }
+        }
+    },
+    "寻找梦幻卷扭蛋机-扭蛋机": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    504,
+                    129,
+                    274,
+                    263
+                ],
+                "template": [
+                    "梦幻卷扭蛋机图标.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "next": [
+            "开始梦幻扭蛋机10次-扭蛋机"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7565,
+                "y": 2567
+            }
+        }
+    },
+    "已退出扭蛋机任务界面-扭蛋机": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8836,
+                "y": 2627
+            }
+        }
+    },
+    "开启活动1：邀请赛奖励": {
+        "next": [
+            "进入邀请赛界面-邀请赛",
+            "活动1：邀请赛奖励结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5627,
+                "y": 1470
+            }
+        }
+    },
+    "开启活动2：扭蛋机": {
+        "next": [
+            "进入活动界面-扭蛋机"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5640,
+                "y": 2438
+            }
+        }
+    },
+    "开始全部领取邀请赛-邀请赛": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    960,
+                    560,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "全部领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7836,
+                "y": 1019
+            }
+        }
+    },
+    "开始梦幻扭蛋机10次-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    651,
+                    438,
+                    151,
+                    57
+                ],
+                "expected": [
+                    "10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]扭蛋币不足确认",
+            "[JumpBack]确认扭蛋奖励",
+            "梦幻扭蛋机结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7922,
+                "y": 2616
+            }
+        }
+    },
+    "开始活动3": {
+        "next": [
+            "活动3结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5826,
+                "y": 3266
+            }
+        }
+    },
+    "扭蛋币不足确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    580,
+                    557,
+                    119,
+                    48
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8355,
+                "y": 2535
+            }
+        }
+    },
+    "无待领取的邀请赛": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7263,
+                "y": 1599
+            }
+        }
+    },
+    "是否位于扭蛋机任务界面-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    70,
+                    0,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "活动目标"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    30,
+                    -47,
+                    -61,
+                    -16
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]一键领取扭蛋机任务奖励-扭蛋机",
+            "[JumpBack]确认扭蛋机任务奖励-扭蛋机",
+            "[JumpBack]退出扭蛋机任务界面-扭蛋机",
+            "已退出扭蛋机任务界面-扭蛋机"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8303,
+                "y": 2184
+            }
+        }
+    },
+    "是否位于扭蛋机界面-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    11,
+                    10,
+                    176,
+                    57
+                ],
+                "expected": [
+                    "扭蛋机"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]判断是否有待领取奖励-扭蛋机",
+            "[JumpBack]寻找梦幻卷扭蛋机-扭蛋机",
+            "活动2-扭蛋机结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7166,
+                "y": 2223
+            }
+        }
+    },
+    "是否位于活动界面-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    19,
+                    4,
+                    121,
+                    58
+                ],
+                "expected": [
+                    "活动"
+                ]
+            }
+        },
+        "next": [
+            "寻找巨型扭蛋机活动-扭蛋机",
+            "活动2-扭蛋机结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6454,
+                "y": 2374
+            }
+        }
+    },
+    "是否位于邀请赛图标-邀请赛": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1,
+                    5,
+                    203,
+                    62
+                ],
+                "expected": [
+                    "邀请赛"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]判断有没有待处理邀请赛-邀请赛",
+            "活动1：邀请赛奖励结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6469,
+                "y": 1282
+            }
+        }
+    },
+    "活动1-邀请赛奖励": {
+        "next": [
+            "开启活动1：邀请赛奖励",
+            "关闭活动1：邀请赛奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5208,
+                "y": 1689
+            }
+        }
+    },
+    "活动1结束返回一次主界面": {
+        "max_hit": 1,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6730,
+                "y": 1791
+            }
+        }
+    },
+    "活动1：邀请赛奖励结束": {
+        "next": [
+            "[JumpBack]活动1结束返回一次主界面",
+            "活动2-扭蛋机"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6303,
+                "y": 1975
+            }
+        }
+    },
+    "活动2-扭蛋机": {
+        "next": [
+            "开启活动2：扭蛋机",
+            "关闭活动2：扭蛋机"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5237,
+                "y": 2452
+            }
+        }
+    },
+    "活动2-扭蛋机结束": {
+        "next": [
+            "[JumpBack]活动2结束返回主界面",
+            "活动三开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6207,
+                "y": 2926
+            }
+        }
+    },
+    "活动2结束返回主界面": {
+        "max_hit": 1,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6637,
+                "y": 2775
+            }
+        }
+    },
+    "活动3结束": {
+        "next": [
+            "[JumpBack]活动3结束返回主界面",
+            "活动奖励任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6206,
+                "y": 3649
+            }
+        }
+    },
+    "活动3结束返回主界面": {
+        "max_hit": 1,
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6583,
+                "y": 3503
+            }
+        }
+    },
+    "活动三开始": {
+        "next": [
+            "开始活动3",
+            "关闭活动3"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5242,
+                "y": 3385
+            }
+        }
+    },
+    "活动奖励任务结束": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6518,
+                "y": 3882
+            }
+        }
+    },
+    "活动奖励开始": {
+        "next": [
+            "活动1-邀请赛奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4711,
+                "y": 1707
+            }
+        }
+    },
+    "确认扭蛋奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    561,
+                    639,
+                    160,
+                    59
+                ],
+                "expected": [
+                    "点击空白处"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8337,
+                "y": 2781
+            }
+        }
+    },
+    "确认扭蛋机任务奖励-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    553,
+                    639,
+                    173,
+                    65
+                ],
+                "expected": [
+                    "空白处关闭"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8869,
+                "y": 2068
+            }
+        }
+    },
+    "确认领取邀请赛奖励-邀请赛": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    475,
+                    560,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "点击空白处关闭弹窗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7834,
+                "y": 1237
+            }
+        }
+    },
+    "进入活动界面-扭蛋机": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    960,
+                    136,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "活动"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    2,
+                    -29,
+                    -25,
+                    -15
+                ]
+            }
+        },
+        "next": [
+            "是否位于活动界面-扭蛋机",
+            "[JumpBack]进入活动界面-扭蛋机_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5931,
+                "y": 2398
+            }
+        }
+    },
+    "进入活动界面-扭蛋机_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    960,
+                    136,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "活动"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    2,
+                    -29,
+                    -25,
+                    -15
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6223,
+                "y": 2187
+            }
+        }
+    },
+    "进入邀请赛界面-邀请赛": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    948,
+                    131,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "邀请赛"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "是否位于邀请赛图标-邀请赛",
+            "[JumpBack]进入邀请赛界面-邀请赛_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6062,
+                "y": 1277
+            }
+        }
+    },
+    "进入邀请赛界面-邀请赛_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    948,
+                    131,
+                    320,
+                    160
+                ],
+                "expected": [
+                    "邀请赛"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6388,
+                "y": 1031
+            }
+        }
+    },
+    "退出扭蛋机任务界面-扭蛋机": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1189,
+                    13,
+                    75,
+                    68
+                ],
+                "template": [
+                    "黑底白色叉号.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8878,
+                "y": 2301
+            }
+        }
+    },
+    "选择待领取任务-邀请赛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    329,
+                    69,
+                    933,
+                    63
+                ],
+                "template": [
+                    "待领取红色圆点图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]开始全部领取邀请赛-邀请赛",
+            "[JumpBack]确认领取邀请赛奖励-邀请赛",
+            "邀请赛领取结束-邀请赛"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7320,
+                "y": 1213
+            }
+        }
+    },
+    "邀请赛领取结束-邀请赛": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7810,
+                "y": 1494
+            }
+        }
+    },
+    "梦幻扭蛋机结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8297,
+                "y": 3069
+            }
+        }
+    }
+}

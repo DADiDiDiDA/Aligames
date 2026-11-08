@@ -116,6 +116,18 @@
             "default_check": true,
             "doc": "进入任务指南领取每日任务奖励。",
             "label": "📋 领取任务"
+        },
+        {
+            "name": "🎁 活动奖励",
+            "entry": "活动奖励开始",
+            "default_check": true,
+            "option": [
+                "活动1-邀请赛奖励",
+                "活动2-扭蛋机",
+                "活动3"
+            ],
+            "doc": "依次领取邀请赛奖励、扭蛋机奖励和活动3奖励，可在 option 中分别设置跳过。",
+            "label": "🎁 活动奖励"
         }
     ],
     "option": {
@@ -860,6 +872,96 @@
                         "进入游戏开始": {
                             "next": [
                                 "不需要启动游戏"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "活动1-邀请赛奖励": {
+            "type": "select",
+            "label": "活动1：邀请赛奖励",
+            "description": "是否执行邀请赛奖励领取。",
+            "default_case": "执行",
+            "cases": [
+                {
+                    "name": "执行",
+                    "label": "执行",
+                    "pipeline_override": {
+                        "活动1-邀请赛奖励": {
+                            "next": [
+                                "开启活动1：邀请赛奖励"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "跳过",
+                    "label": "跳过",
+                    "pipeline_override": {
+                        "活动1-邀请赛奖励": {
+                            "next": [
+                                "关闭活动1：邀请赛奖励"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "活动2-扭蛋机": {
+            "type": "select",
+            "label": "活动2：扭蛋机",
+            "description": "是否执行扭蛋机活动。",
+            "default_case": "执行",
+            "cases": [
+                {
+                    "name": "执行",
+                    "label": "执行",
+                    "pipeline_override": {
+                        "活动2-扭蛋机": {
+                            "next": [
+                                "开启活动2：扭蛋机"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "跳过",
+                    "label": "跳过",
+                    "pipeline_override": {
+                        "活动2-扭蛋机": {
+                            "next": [
+                                "关闭活动2：扭蛋机"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "活动3": {
+            "type": "select",
+            "label": "活动3",
+            "description": "是否执行活动3。",
+            "default_case": "执行",
+            "cases": [
+                {
+                    "name": "执行",
+                    "label": "执行",
+                    "pipeline_override": {
+                        "活动三开始": {
+                            "next": [
+                                "开始活动3"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "跳过",
+                    "label": "跳过",
+                    "pipeline_override": {
+                        "活动三开始": {
+                            "next": [
+                                "关闭活动3"
                             ]
                         }
                     }

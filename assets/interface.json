@@ -1,7 +1,7 @@
 {
     "interface_version": 2,
     "name": "Aligames",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "license": "MIT",
     "welcome": "欢迎使用坎公骑冠剑自动化脚本！首次使用请先阅读各任务说明，并确认游戏账号已处于可自动登录状态。",
     "description": "坎公骑冠剑（Guardian Tales）日常自动化脚本",

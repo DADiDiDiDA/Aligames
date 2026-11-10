@@ -51,6 +51,7 @@
         }
     },
     "修改排序为升序": {
+        "post_delay": 2000,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -184,6 +185,7 @@
         }
     },
     "强化装备任务状态-未完成": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -214,6 +216,7 @@
         }
     },
     "强化装备任务状态-未完成_第二次": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -268,6 +271,7 @@
         }
     },
     "滑动任务界面-强化装备": {
+        "post_delay": 2000,
         "action": {
             "type": "Swipe",
             "param": {
@@ -298,6 +302,7 @@
         }
     },
     "确认强化开始": {
+        "post_delay": 2000,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -326,6 +331,7 @@
         }
     },
     "确认武器强化": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -365,6 +371,7 @@
         }
     },
     "进入任务界面-强化装备": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -394,6 +401,7 @@
         }
     },
     "进入任务界面-强化装备_第二次": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -419,6 +427,7 @@
         }
     },
     "进入排序类型选择": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -451,6 +460,7 @@
         }
     },
     "进入日常任务界面-强化装备": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -481,6 +491,7 @@
         }
     },
     "进入日常任务界面-强化装备_第二次": {
+        "post_delay": 2000,
         "max_hit": 4,
         "recognition": {
             "type": "OCR",
@@ -532,6 +543,7 @@
         }
     },
     "选择低等级装备": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -563,6 +575,7 @@
         }
     },
     "选择低等级装备_第二次": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -590,6 +603,7 @@
         }
     },
     "选择低等级装备当燃料": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -617,6 +631,7 @@
         }
     },
     "选择等级排序": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {

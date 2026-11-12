@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794107700146,
+            "lastSyncTime": 1794443761167,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\启动游戏.json",
             "savedViewport": {
-                "x": 1043,
-                "y": 908,
-                "zoom": 0.23
+                "x": 1391,
+                "y": 903,
+                "zoom": 0.66
             },
             "filename": "启动游戏",
             "version": "v2.1.1"
@@ -278,6 +278,39 @@
             }
         }
     },
+    "尝试点击空白处": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    4,
+                    4,
+                    197,
+                    48
+                ],
+                "expected": [
+                    "版本"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    53,
+                    75,
+                    13,
+                    10
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -1036,
+                "y": -985
+            }
+        }
+    },
     "左上角箭头返回": {
         "recognition": {
             "type": "TemplateMatch",
@@ -300,8 +333,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -899,
-                "y": -1806
+                "x": -919,
+                "y": -1733
             }
         }
     },
@@ -354,7 +387,7 @@
         "$__mpe_code": {
             "position": {
                 "x": -939,
-                "y": -1475
+                "y": -1408
             }
         }
     },
@@ -397,7 +430,8 @@
             "[JumpBack]关闭弹窗",
             "[JumpBack]左上角箭头返回",
             "[JumpBack]确认进入游戏",
-            "[Anchor][JumpBack]启动游戏一次"
+            "[Anchor][JumpBack]启动游戏一次",
+            "[JumpBack]尝试点击空白处"
         ],
         "$__mpe_code": {
             "position": {
@@ -454,20 +488,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2026,
-                "y": -2361
-            }
-        }
-    },
-    "需要启动游戏单引用-限流": {
-        "recognition": {
-            "type": "DirectHit"
-        },
-        "max_hit": 3,
-        "$__mpe_code": {
-            "position": {
-                "x": -1776,
-                "y": -2127
+                "x": -2384,
+                "y": -1967
             }
         }
     },
@@ -477,8 +499,17 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -1526,
-                "y": -1893
+                "x": -1865,
+                "y": -2100
+            }
+        }
+    },
+    "需要启动游戏单引用-限流": {
+        "max_hit": 3,
+        "$__mpe_code": {
+            "position": {
+                "x": -1950,
+                "y": -1764
             }
         }
     }

@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794013356126,
+            "lastSyncTime": 1794445621181,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\装备强化一次.json",
             "savedViewport": {
-                "x": -1303,
-                "y": 538,
-                "zoom": 0.63
+                "x": 332,
+                "y": 385,
+                "zoom": 0.7
             },
             "filename": "装备强化一次",
             "version": "v2.1.1"
@@ -19,8 +19,8 @@
     "$__mpe_external_返回主界面开始_装备强化一次": {
         "$__mpe_code": {
             "position": {
-                "x": 3929,
-                "y": 112
+                "x": 4246,
+                "y": 371
             }
         }
     },
@@ -51,7 +51,6 @@
         }
     },
     "修改排序为升序": {
-        "post_delay": 2000,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -72,6 +71,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1617,
@@ -133,16 +133,16 @@
     },
     "强化按钮出现": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    604,
-                    574,
-                    63,
-                    43
+                    518,
+                    555,
+                    239,
+                    79
                 ],
-                "expected": [
-                    "强化"
+                "template": [
+                    "强化按钮.png"
                 ]
             }
         },
@@ -152,8 +152,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2242,
-                "y": -325
+                "x": 2881,
+                "y": -211
             }
         }
     },
@@ -179,13 +179,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 716,
-                "y": 273
+                "x": 673,
+                "y": 183
             }
         }
     },
     "强化装备任务状态-未完成": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -204,6 +203,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]强化装备任务状态-未完成_第二次",
             "任务未完成开始执行装备强化"
@@ -216,7 +216,6 @@
         }
     },
     "强化装备任务状态-未完成_第二次": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -235,6 +234,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 959,
@@ -270,8 +270,32 @@
             }
         }
     },
+    "材料数量较多": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    537,
+                    43,
+                    216,
+                    130
+                ],
+                "expected": [
+                    "选择材料"
+                ]
+            }
+        },
+        "next": [
+            "确认材料选择"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2333,
+                "y": -463
+            }
+        }
+    },
     "滑动任务界面-强化装备": {
-        "post_delay": 2000,
         "action": {
             "type": "Swipe",
             "param": {
@@ -294,15 +318,15 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 260,
-                "y": 125
+                "x": -24,
+                "y": 490
             }
         }
     },
     "确认强化开始": {
-        "post_delay": 2000,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -320,18 +344,43 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "进行武器强化提示出现"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2562,
-                "y": -470
+                "x": 3226,
+                "y": -277
+            }
+        }
+    },
+    "确认材料选择": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    696,
+                    566,
+                    100,
+                    54
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2620,
+                "y": -457
             }
         }
     },
     "确认武器强化": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -349,13 +398,14 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3194,
-                "y": -422
+                "x": 3915,
+                "y": 80
             }
         }
     },
@@ -365,13 +415,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -675,
-                "y": -134
+                "x": -953,
+                "y": -216
             }
         }
     },
     "进入任务界面-强化装备": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -389,19 +438,19 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "进入日常任务界面-强化装备",
             "[JumpBack]进入任务界面-强化装备_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -344,
-                "y": -149
+                "x": -604,
+                "y": -255
             }
         }
     },
     "进入任务界面-强化装备_第二次": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -419,15 +468,15 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -70,
-                "y": -434
+                "x": -256,
+                "y": -520
             }
         }
     },
     "进入排序类型选择": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -449,6 +498,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择等级排序"
         ],
@@ -460,7 +510,6 @@
         }
     },
     "进入日常任务界面-强化装备": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -478,20 +527,21 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
-            "[JumpBack]进入日常任务界面-强化装备_第二次",
             "寻找强化1次装备任务",
+            "所有日常都已经完成",
+            "[JumpBack]进入日常任务界面-强化装备_第二次",
             "[JumpBack]滑动任务界面-强化装备"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -8,
-                "y": -141
+                "x": -272,
+                "y": -171
             }
         }
     },
     "进入日常任务界面-强化装备_第二次": {
-        "post_delay": 2000,
         "max_hit": 4,
         "recognition": {
             "type": "OCR",
@@ -510,6 +560,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 263,
@@ -537,13 +588,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2903,
-                "y": -397
+                "x": 3562,
+                "y": -36
             }
         }
     },
     "选择低等级装备": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -563,8 +613,10 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "强化按钮出现",
+            "[JumpBack]材料数量较多",
             "[JumpBack]选择低等级装备_第二次"
         ],
         "$__mpe_code": {
@@ -575,7 +627,6 @@
         }
     },
     "选择低等级装备_第二次": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -595,15 +646,15 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 2232,
-                "y": -575
+                "x": 2361,
+                "y": -751
             }
         }
     },
     "选择低等级装备当燃料": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -623,15 +674,15 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 2519,
-                "y": -138
+                "x": 3224,
+                "y": 101
             }
         }
     },
     "选择等级排序": {
-        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -649,10 +700,36 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 1641,
                 "y": 73
+            }
+        }
+    },
+    "所有日常都已经完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    686,
+                    435,
+                    209,
+                    73
+                ],
+                "expected": [
+                    "已完成今天所有"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 220,
+                "y": 291
             }
         }
     }

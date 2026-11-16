@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794445621181,
+            "lastSyncTime": 1794714578296,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\装备强化一次.json",
             "savedViewport": {
-                "x": 332,
-                "y": 385,
-                "zoom": 0.7
+                "x": 101,
+                "y": 438,
+                "zoom": 0.86
             },
             "filename": "装备强化一次",
             "version": "v2.1.1"
@@ -163,10 +163,10 @@
             "param": {
                 "roi": "寻找强化1次装备任务",
                 "roi_offset": [
-                    646,
-                    -13,
-                    129,
-                    84
+                    732,
+                    21,
+                    -33,
+                    13
                 ],
                 "expected": [
                     "领取",
@@ -190,10 +190,10 @@
             "param": {
                 "roi": "寻找强化1次装备任务",
                 "roi_offset": [
-                    646,
-                    -13,
-                    129,
-                    84
+                    732,
+                    21,
+                    -33,
+                    13
                 ],
                 "expected": [
                     "开始"
@@ -221,10 +221,10 @@
             "param": {
                 "roi": "寻找强化1次装备任务",
                 "roi_offset": [
-                    646,
-                    -13,
-                    129,
-                    84
+                    732,
+                    21,
+                    -33,
+                    13
                 ],
                 "expected": [
                     "开始"
@@ -239,6 +239,31 @@
             "position": {
                 "x": 959,
                 "y": -530
+            }
+        }
+    },
+    "所有日常都已经完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    686,
+                    435,
+                    209,
+                    73
+                ],
+                "expected": [
+                    "已完成今天所有"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 220,
+                "y": 291
             }
         }
     },
@@ -706,31 +731,6 @@
             "position": {
                 "x": 1641,
                 "y": 73
-            }
-        }
-    },
-    "所有日常都已经完成": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    686,
-                    435,
-                    209,
-                    73
-                ],
-                "expected": [
-                    "已完成今天所有"
-                ]
-            }
-        },
-        "next": [
-            "返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 220,
-                "y": 291
             }
         }
     }

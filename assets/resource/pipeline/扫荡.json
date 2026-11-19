@@ -218,7 +218,7 @@
                 ],
                 "template": [
                     "三星通关图标-未选择.png",
-                    "三星通关图标-已选择.png.png"
+                    "三星通关图标-已选择.png"
                 ],
                 "green_mask": true,
                 "threshold": [
@@ -256,7 +256,7 @@
                 ],
                 "template": [
                     "三星通关图标-未选择.png",
-                    "三星通关图标-已选择.png.png"
+                    "三星通关图标-已选择.png"
                 ],
                 "green_mask": true,
                 "threshold": [
@@ -289,7 +289,7 @@
                 ],
                 "template": [
                     "三星通关图标-未选择.png",
-                    "三星通关图标-已选择.png.png"
+                    "三星通关图标-已选择.png"
                 ],
                 "green_mask": true,
                 "threshold": [
@@ -327,7 +327,7 @@
                 ],
                 "template": [
                     "三星通关图标-未选择.png",
-                    "三星通关图标-已选择.png.png"
+                    "三星通关图标-已选择.png"
                 ],
                 "green_mask": true,
                 "threshold": [

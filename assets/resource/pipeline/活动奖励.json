@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794299730849,
+            "lastSyncTime": 1795310898061,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\活动奖励.json",
             "savedViewport": {
-                "x": -2477,
-                "y": -1379,
-                "zoom": 0.52
+                "x": -1619,
+                "y": -500,
+                "zoom": 0.37
             },
             "filename": "活动奖励",
             "version": "v2.1.1"
@@ -139,7 +139,8 @@
                     501
                 ],
                 "template": [
-                    "邀请赛红色图标.png"
+                    "邀请赛红色图标.png",
+                    "邀请赛红色图标2.png"
                 ],
                 "green_mask": true,
                 "threshold": [

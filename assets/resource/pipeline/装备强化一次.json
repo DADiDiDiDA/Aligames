@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794714578296,
+            "lastSyncTime": 1795578821161,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\装备强化一次.json",
             "savedViewport": {
-                "x": 101,
-                "y": 438,
-                "zoom": 0.86
+                "x": 684,
+                "y": 224,
+                "zoom": 0.3
             },
             "filename": "装备强化一次",
             "version": "v2.1.1"
@@ -216,6 +216,7 @@
         }
     },
     "强化装备任务状态-未完成_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -321,6 +322,7 @@
         }
     },
     "滑动任务界面-强化装备": {
+        "max_hit": 20,
         "action": {
             "type": "Swipe",
             "param": {
@@ -441,8 +443,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -953,
-                "y": -216
+                "x": -1263,
+                "y": -219
             }
         }
     },
@@ -471,12 +473,13 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -604,
-                "y": -255
+                "x": -897,
+                "y": -269
             }
         }
     },
     "进入任务界面-强化装备_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -497,8 +500,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": -256,
-                "y": -520
+                "x": -529,
+                "y": -494
             }
         }
     },
@@ -558,12 +561,13 @@
             "寻找强化1次装备任务",
             "所有日常都已经完成",
             "[JumpBack]进入日常任务界面-强化装备_第二次",
-            "[JumpBack]滑动任务界面-强化装备"
+            "[JumpBack]滑动任务界面-强化装备",
+            "未找到对应任务-装备强化"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -272,
-                "y": -171
+                "x": -456,
+                "y": -194
             }
         }
     },
@@ -653,6 +657,7 @@
         }
     },
     "选择低等级装备_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -731,6 +736,17 @@
             "position": {
                 "x": 1641,
                 "y": 73
+            }
+        }
+    },
+    "未找到对应任务-装备强化": {
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -176,
+                "y": 941
             }
         }
     }

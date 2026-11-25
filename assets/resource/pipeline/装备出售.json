@@ -470,6 +470,7 @@
         }
     },
     "一键全选出售武器_第二次-装备出售": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -495,6 +496,7 @@
         }
     },
     "尝试进入背包界面_第二次-装备出售": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -520,6 +522,7 @@
         }
     },
     "进入排序选择_第二次-装备出售": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -549,6 +552,7 @@
         }
     },
     "排序结束准备出售_第二次-装备出售": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

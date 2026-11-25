@@ -628,6 +628,7 @@
         }
     },
     "副本-光花石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -678,6 +679,7 @@
         }
     },
     "副本-光进石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -728,6 +730,7 @@
         }
     },
     "副本-土花石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -778,6 +781,7 @@
         }
     },
     "副本-土进石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -828,6 +832,7 @@
         }
     },
     "副本-暗花石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -878,6 +883,7 @@
         }
     },
     "副本-暗进石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -928,6 +934,7 @@
         }
     },
     "副本-水花石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -978,6 +985,7 @@
         }
     },
     "副本-水进石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1028,6 +1036,7 @@
         }
     },
     "副本-火花石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1078,6 +1087,7 @@
         }
     },
     "副本-火进石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1128,6 +1138,7 @@
         }
     },
     "副本-红色碎片副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1178,6 +1189,7 @@
         }
     },
     "副本-经验副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1228,6 +1240,7 @@
         }
     },
     "副本-虚花石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1278,6 +1291,7 @@
         }
     },
     "副本-虚进石_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1328,6 +1342,7 @@
         }
     },
     "副本-觉醒副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1378,6 +1393,7 @@
         }
     },
     "副本-道具副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1428,6 +1444,7 @@
         }
     },
     "副本-金币副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1654,6 +1671,7 @@
         }
     },
     "英雄传-扫荡_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1749,6 +1767,7 @@
         }
     },
     "菜单-英雄传_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1805,6 +1824,7 @@
         }
     },
     "进入游玩菜单_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -1861,6 +1881,7 @@
         }
     },
     "进入裂痕界面_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1994,6 +2015,7 @@
         }
     },
     "页签-开花石副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -2114,6 +2136,7 @@
         }
     },
     "页签-资源副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -2175,6 +2198,7 @@
         }
     },
     "页签-进化石副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

@@ -172,6 +172,7 @@
         }
     },
     "进入任务指南界面_第二次-领取任务": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

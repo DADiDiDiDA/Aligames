@@ -80,6 +80,7 @@
         }
     },
     "商店-装备-强化锤_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -124,6 +125,7 @@
         }
     },
     "商店-装备-购买_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -199,6 +201,7 @@
         }
     },
     "商店-资源-购买_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -243,6 +246,7 @@
         }
     },
     "商店-资源-金币_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -362,6 +366,7 @@
         }
     },
     "菜单-商店_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795415344150,
+            "lastSyncTime": 1795580478741,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\活动奖励.json",
             "savedViewport": {
-                "x": -4604,
-                "y": -720,
-                "zoom": 0.75
+                "x": -2481,
+                "y": -909,
+                "zoom": 0.52
             },
             "filename": "活动奖励",
             "version": "v2.1.1"
@@ -236,6 +236,7 @@
         }
     },
     "寻找巨型扭蛋机活动-扭蛋机_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -509,8 +510,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6454,
-                "y": 2374
+                "x": 6445,
+                "y": 2455
             }
         }
     },
@@ -772,15 +773,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    2,
-                    -29,
-                    -25,
-                    -15
-                ]
-            }
+            "type": "Click"
         },
         "post_delay": 2000,
         "next": [
@@ -795,6 +788,7 @@
         }
     },
     "进入活动界面-扭蛋机_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -810,15 +804,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    2,
-                    -29,
-                    -25,
-                    -15
-                ]
-            }
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
@@ -859,6 +845,7 @@
         }
     },
     "进入邀请赛界面-邀请赛_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

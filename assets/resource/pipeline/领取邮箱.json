@@ -63,6 +63,7 @@
         }
     },
     "开始关闭邮件奖励弹窗_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -126,6 +127,7 @@
         }
     },
     "开始判断有没有待领取邮件_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -330,6 +332,7 @@
         }
     },
     "确认全部接受邮件奖励_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -386,6 +389,7 @@
         }
     },
     "进入邮箱界面_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

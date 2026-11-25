@@ -245,6 +245,7 @@
         }
     },
     "开始点击最底端的三星通关关卡_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -316,6 +317,7 @@
         }
     },
     "开始点击最底端的三星通关关卡_觉醒副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -393,6 +395,7 @@
         }
     },
     "扫荡-开始_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -663,6 +666,7 @@
         }
     },
     "需要自动战斗_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -720,6 +724,7 @@
         }
     },
     "需要自动战斗_觉醒副本_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

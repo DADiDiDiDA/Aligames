@@ -186,6 +186,7 @@
         }
     },
     "主界面判断开始-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "And",
             "param": {

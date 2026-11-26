@@ -42,6 +42,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3228,
@@ -67,6 +68,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "判断是否位于背包界面-装备出售",
             "[JumpBack]尝试进入背包界面_第二次-装备出售"
@@ -151,6 +153,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4738,
@@ -205,6 +208,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "武器品质过高任务结束-装备出售",
             "检查出售目标是否包括三星及以上武器-装备出售",
@@ -236,6 +240,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]点击空白处关闭弹窗-装备出售",
             "准备再次出售武器-装备出售"
@@ -265,6 +270,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 7213,
@@ -302,6 +308,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择稀有度排序-装备出售",
             "[JumpBack]进入排序选择_第二次-装备出售"
@@ -331,6 +338,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4682,
@@ -384,6 +392,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "是否出现出售界面-装备出售",
             "[JumpBack]排序结束准备出售_第二次-装备出售"
@@ -488,6 +497,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 6225,
@@ -514,6 +524,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3605,
@@ -544,6 +555,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4535,
@@ -570,6 +582,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5366,

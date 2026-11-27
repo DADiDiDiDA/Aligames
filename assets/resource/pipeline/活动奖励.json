@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795580478741,
+            "lastSyncTime": 1795737890526,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Aligames\\assets\\resource\\pipeline\\活动奖励.json",
             "savedViewport": {
-                "x": -2481,
-                "y": -909,
-                "zoom": 0.52
+                "x": -1654,
+                "y": -215,
+                "zoom": 0.32
             },
             "filename": "活动奖励",
             "version": "v2.1.1"
@@ -129,6 +129,7 @@
         }
     },
     "判断有没有待处理邀请赛-邀请赛": {
+        "max_hit": 5,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -866,8 +867,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 6388,
-                "y": 1031
+                "x": 6410,
+                "y": 962
             }
         }
     },
